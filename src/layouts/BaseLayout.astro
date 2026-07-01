@@ -1,0 +1,29 @@
+---
+import Nav from '../components/Nav.astro';
+import { withBase } from '../lib/url';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Enciclopedia sobre el manga y anime de Saint Seiya.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
+    <title>{title} · Enciclopedia Saint Seiya</title>
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

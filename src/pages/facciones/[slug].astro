@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+
+export async function getStaticPaths() {
+  const facciones = await getCollection('facciones');
+  return facciones.map((faccion) => ({ params: { slug: faccion.id }, props: { faccion } }));
+}
+
+const { faccion } = Astro.props;
+const { Content } = await render(faccion);
+const data = faccion.data;
+---
+
+<EntryLayout title={data.nombre} categoria={data.tipoFaccion} description={data.descripcion}>
+  <Fragment slot="meta">
+    {data.liderazgo && <span class="chip">Liderazgo: {data.liderazgo}</span>}
+  </Fragment>
+
+  <p>{data.descripcion}</p>
+  <Content />
+</EntryLayout>

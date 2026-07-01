@@ -1,0 +1,66 @@
+---
+import { withBase } from '../lib/url';
+
+const links = [
+  { href: '/personajes', label: 'Personajes' },
+  { href: '/sagas', label: 'Sagas' },
+  { href: '/tecnicas', label: 'Técnicas' },
+  { href: '/armaduras', label: 'Armaduras' },
+  { href: '/lugares', label: 'Lugares' },
+  { href: '/facciones', label: 'Facciones' },
+];
+---
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="site-title" href={withBase('/')}>Enciclopedia Saint Seiya</a>
+    <ul>
+      {links.map((link) => (
+        <li><a href={withBase(link.href)}>{link.label}</a></li>
+      ))}
+    </ul>
+    <a class="search-link" href={withBase('/buscar')}>Buscar</a>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg-alt);
+  }
+
+  .site-nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .site-title {
+    font-weight: 700;
+    color: var(--color-gold);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    color: var(--color-text);
+  }
+
+  .search-link {
+    margin-left: auto;
+    color: var(--color-text-muted);
+  }
+</style>

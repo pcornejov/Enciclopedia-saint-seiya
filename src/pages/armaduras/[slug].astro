@@ -1,0 +1,34 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import RelationBadge from '../../components/RelationBadge.astro';
+
+export async function getStaticPaths() {
+  const armaduras = await getCollection('armaduras');
+  return armaduras.map((armadura) => ({ params: { slug: armadura.id }, props: { armadura } }));
+}
+
+const { armadura } = Astro.props;
+const { Content } = await render(armadura);
+const data = armadura.data;
+
+const portadores = await Promise.all(data.portadores.map((ref) => getEntry(ref)));
+---
+
+<EntryLayout title={data.nombre} categoria={data.tipo} description={data.descripcion}>
+  <Fragment slot="meta">
+    {data.constelacion && <span class="chip">Constelación: {data.constelacion}</span>}
+  </Fragment>
+
+  <p>{data.descripcion}</p>
+  <Content />
+
+  {portadores.length > 0 && (
+    <section>
+      <h2>Portadores</h2>
+      <div class="entry-meta">
+        {portadores.map((p) => p && <RelationBadge href={`/personajes/${p.id}`} label={p.data.nombre} />)}
+      </div>
+    </section>
+  )}
+</EntryLayout>

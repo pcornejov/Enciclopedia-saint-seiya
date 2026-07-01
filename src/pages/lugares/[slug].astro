@@ -1,0 +1,30 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import RelationBadge from '../../components/RelationBadge.astro';
+
+export async function getStaticPaths() {
+  const lugares = await getCollection('lugares');
+  return lugares.map((lugar) => ({ params: { slug: lugar.id }, props: { lugar } }));
+}
+
+const { lugar } = Astro.props;
+const { Content } = await render(lugar);
+const data = lugar.data;
+
+const sagasAsociadas = await Promise.all(data.sagasAsociadas.map((ref) => getEntry(ref)));
+---
+
+<EntryLayout title={data.nombre} categoria={data.region.replaceAll('_', ' ')} description={data.descripcion}>
+  <p>{data.descripcion}</p>
+  <Content />
+
+  {sagasAsociadas.length > 0 && (
+    <section>
+      <h2>Sagas asociadas</h2>
+      <div class="entry-meta">
+        {sagasAsociadas.map((s) => s && <RelationBadge href={`/sagas/${s.id}`} label={s.data.nombre} />)}
+      </div>
+    </section>
+  )}
+</EntryLayout>

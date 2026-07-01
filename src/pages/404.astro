@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/url';
+---
+
+<BaseLayout title="Página no encontrada">
+  <h1>404</h1>
+  <p>No encontramos esta página. Volvé al <a href={withBase('/')}>inicio</a> o probá la <a href={withBase('/buscar')}>búsqueda</a>.</p>
+</BaseLayout>

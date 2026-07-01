@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const tecnicas = (await getCollection('tecnicas')).sort((a, b) => a.data.nombre.localeCompare(b.data.nombre));
+---
+
+<BaseLayout title="Técnicas" description="Técnicas y ataques del universo Saint Seiya.">
+  <h1>Técnicas</h1>
+  <p>{tecnicas.length} técnicas catalogadas.</p>
+
+  <div class="grid">
+    {tecnicas.map((tecnica) => (
+      <Card
+        href={`/tecnicas/${tecnica.id}`}
+        title={tecnica.data.nombre}
+        excerpt={tecnica.data.descripcion}
+        badge={tecnica.data.tipoAtaque}
+      />
+    ))}
+  </div>
+</BaseLayout>

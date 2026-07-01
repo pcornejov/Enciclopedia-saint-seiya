@@ -1,0 +1,34 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import RelationBadge from '../../components/RelationBadge.astro';
+
+export async function getStaticPaths() {
+  const tecnicas = await getCollection('tecnicas');
+  return tecnicas.map((tecnica) => ({ params: { slug: tecnica.id }, props: { tecnica } }));
+}
+
+const { tecnica } = Astro.props;
+const { Content } = await render(tecnica);
+const data = tecnica.data;
+
+const usuarios = await Promise.all(data.usuarios.map((ref) => getEntry(ref)));
+---
+
+<EntryLayout title={data.nombre} categoria={data.tipoAtaque} description={data.descripcion}>
+  <Fragment slot="meta">
+    {data.nombreJapones && <span class="chip">{data.nombreJapones}</span>}
+  </Fragment>
+
+  <p>{data.descripcion}</p>
+  <Content />
+
+  {usuarios.length > 0 && (
+    <section>
+      <h2>Usuarios</h2>
+      <div class="entry-meta">
+        {usuarios.map((u) => u && <RelationBadge href={`/personajes/${u.id}`} label={u.data.nombre} />)}
+      </div>
+    </section>
+  )}
+</EntryLayout>
