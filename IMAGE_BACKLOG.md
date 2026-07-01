@@ -1,14 +1,16 @@
 # Backlog de Imágenes — Enciclopedia Saint Seiya
 
 > Reglas de uso completas: ver `.claude/skills/image-loop/SKILL.md`.
-> Fuente: AniList (`https://graphql.anilist.co`), verificando que el personaje encontrado pertenezca a algún
+> Fuentes: AniList (`https://graphql.anilist.co`) como principal, Jikan/MyAnimeList (`https://api.jikan.moe/v4`)
+> como fallback cuando AniList no da match — verificando en ambos casos que el personaje pertenezca a algún
 > título "Saint Seiya" antes de usar su imagen (ver skill). Nunca se generan ni descargan imágenes de otra forma.
 > Cada ítem marcado `[x]` debe tener `imagen` + `imagenAtribucion` en el frontmatter del `.mdx` correspondiente.
 > Si no se encuentra una imagen verificada, el ítem se marca `[skip]` (no `[x]`) con la fecha y se sigue de largo —
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Balder con imagen verificada — cierra el backlog actual)
+- Última iteración: 2026-07-01 (revisión de [skip] previos con Jikan como fallback: Ban y Babel resueltos, Albiore
+  sigue sin match)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -40,13 +42,13 @@
 - [x] Jabu de Unicornio (`personajes/jabu-unicornio.mdx`) — 2026-07-01
 - [x] Ichi de Hydra (`personajes/ichi-hydra.mdx`) — 2026-07-01
 - [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
-- [skip] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Ban", "Bear Ban", "Great Bear Ban", "Big Dipper Ban")
+- [x] Ban de León Menor (`personajes/ban-leon-menor.mdx`) — 2026-07-01 (sin match en AniList; resuelto vía Jikan, roster oficial del anime — mal_id 18730)
 - [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
 - [x] Marín de Águila (`personajes/marin-aguila.mdx`) — 2026-07-01
 - [x] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`) — 2026-07-01
 - [skip] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Albiore", "Cepheus Albiore", "Albiore Cepheus")
 - [x] Misty de Lagarto (`personajes/misty-lagarto.mdx`) — 2026-07-01
-- [skip] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Babel", "Centaur Babel", "Babel Centauro")
+- [x] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01 (sin match en AniList; resuelto vía Jikan, roster oficial del anime — mal_id 194754)
 - [x] Tenma (`personajes/tenma-lost-canvas.mdx`) — 2026-07-01
 - [x] Alone (`personajes/alone-lost-canvas.mdx`) — 2026-07-01
 - [x] Sasha (`personajes/sasha-lost-canvas.mdx`) — 2026-07-01
