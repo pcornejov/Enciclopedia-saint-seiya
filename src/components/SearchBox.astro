@@ -1,0 +1,18 @@
+---
+import { withBase } from '../lib/url';
+
+// Pagefind indexa el sitio recién en `npm run build` (script postbuild).
+// En `astro dev` este componente no encontrará /pagefind/ todavía: es esperado.
+const pagefindUiJs = withBase('/pagefind/pagefind-ui.js');
+---
+
+<div id="search"></div>
+<link rel="stylesheet" href={withBase('/pagefind/pagefind-ui.css')} />
+<script is:inline src={pagefindUiJs}></script>
+<script is:inline define:vars={{ pagefindBundlePath: withBase('/pagefind/') }}>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.PagefindUI) {
+      new window.PagefindUI({ element: '#search', showSubResults: true, bundlePath: pagefindBundlePath });
+    }
+  });
+</script>

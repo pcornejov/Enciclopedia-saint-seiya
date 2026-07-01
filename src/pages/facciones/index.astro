@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const facciones = (await getCollection('facciones')).sort((a, b) => a.data.nombre.localeCompare(b.data.nombre));
+---
+
+<BaseLayout title="Facciones" description="Facciones y organizaciones del universo Saint Seiya.">
+  <h1>Facciones</h1>
+  <p>{facciones.length} facciones catalogadas.</p>
+
+  <div class="grid">
+    {facciones.map((faccion) => (
+      <Card
+        href={`/facciones/${faccion.id}`}
+        title={faccion.data.nombre}
+        excerpt={faccion.data.descripcion}
+        badge={faccion.data.tipoFaccion}
+      />
+    ))}
+  </div>
+</BaseLayout>

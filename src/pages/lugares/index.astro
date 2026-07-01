@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const lugares = (await getCollection('lugares')).sort((a, b) => a.data.nombre.localeCompare(b.data.nombre));
+---
+
+<BaseLayout title="Lugares" description="Lugares del universo Saint Seiya.">
+  <h1>Lugares</h1>
+  <p>{lugares.length} lugares catalogados.</p>
+
+  <div class="grid">
+    {lugares.map((lugar) => (
+      <Card
+        href={`/lugares/${lugar.id}`}
+        title={lugar.data.nombre}
+        excerpt={lugar.data.descripcion}
+        badge={lugar.data.region.replaceAll('_', ' ')}
+      />
+    ))}
+  </div>
+</BaseLayout>

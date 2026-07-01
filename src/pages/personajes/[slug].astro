@@ -1,0 +1,77 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import RelationBadge from '../../components/RelationBadge.astro';
+
+export async function getStaticPaths() {
+  const personajes = await getCollection('personajes');
+  return personajes.map((personaje) => ({
+    params: { slug: personaje.id },
+    props: { personaje },
+  }));
+}
+
+const { personaje } = Astro.props;
+const { Content } = await render(personaje);
+const data = personaje.data;
+
+const faccion = data.faccion ? await getEntry(data.faccion) : undefined;
+const armaduraPrincipal = data.armaduraPrincipal ? await getEntry(data.armaduraPrincipal) : undefined;
+const armadurasSecundarias = await Promise.all(data.armadurasSecundarias.map((ref) => getEntry(ref)));
+const tecnicas = await Promise.all(data.tecnicas.map((ref) => getEntry(ref)));
+const sagas = await Promise.all(data.sagas.map((ref) => getEntry(ref)));
+const relaciones = await Promise.all(
+  data.relaciones.map(async (rel) => ({ tipo: rel.tipo, entry: await getEntry(rel.personaje) })),
+);
+---
+
+<EntryLayout title={data.nombre} categoria={data.tipo.replaceAll('_', ' ')} description={data.resumen}>
+  <Fragment slot="meta">
+    {data.alias.map((alias) => <span class="chip">{alias}</span>)}
+    {faccion && <RelationBadge href={`/facciones/${faccion.id}`} label={faccion.data.nombre} tipo="Facción" />}
+    {armaduraPrincipal && (
+      <RelationBadge href={`/armaduras/${armaduraPrincipal.id}`} label={armaduraPrincipal.data.nombre} tipo="Armadura" />
+    )}
+  </Fragment>
+
+  <p>{data.resumen}</p>
+  <Content />
+
+  {sagas.length > 0 && (
+    <section>
+      <h2>Sagas</h2>
+      <div class="entry-meta">
+        {sagas.map((saga) => saga && <RelationBadge href={`/sagas/${saga.id}`} label={saga.data.nombre} />)}
+      </div>
+    </section>
+  )}
+
+  {tecnicas.length > 0 && (
+    <section>
+      <h2>Técnicas</h2>
+      <div class="entry-meta">
+        {tecnicas.map((tecnica) => tecnica && <RelationBadge href={`/tecnicas/${tecnica.id}`} label={tecnica.data.nombre} />)}
+      </div>
+    </section>
+  )}
+
+  {armadurasSecundarias.length > 0 && (
+    <section>
+      <h2>Otras armaduras</h2>
+      <div class="entry-meta">
+        {armadurasSecundarias.map((armadura) => armadura && <RelationBadge href={`/armaduras/${armadura.id}`} label={armadura.data.nombre} />)}
+      </div>
+    </section>
+  )}
+
+  {relaciones.length > 0 && (
+    <section>
+      <h2>Relaciones</h2>
+      <div class="entry-meta">
+        {relaciones.map(({ tipo, entry }) => entry && (
+          <RelationBadge href={`/personajes/${entry.id}`} label={entry.data.nombre} tipo={tipo} />
+        ))}
+      </div>
+    </section>
+  )}
+</EntryLayout>

@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const personajes = (await getCollection('personajes')).sort((a, b) =>
+  a.data.nombre.localeCompare(b.data.nombre),
+);
+
+const tipos = [...new Set(personajes.map((p) => p.data.tipo))].sort();
+const origenes = [...new Set(personajes.map((p) => p.data.origen))].sort();
+---
+
+<BaseLayout title="Personajes" description="Listado de personajes del universo Saint Seiya.">
+  <h1>Personajes</h1>
+  <p>{personajes.length} personajes catalogados.</p>
+
+  <div class="filters">
+    <select id="filtro-tipo">
+      <option value="todos">Todos los tipos</option>
+      {tipos.map((tipo) => <option value={tipo}>{tipo.replaceAll('_', ' ')}</option>)}
+    </select>
+    <select id="filtro-origen">
+      <option value="todos">Todos los orígenes</option>
+      {origenes.map((origen) => <option value={origen}>{origen.replaceAll('_', ' ')}</option>)}
+    </select>
+  </div>
+
+  <div class="grid" id="grid-personajes">
+    {personajes.map((personaje) => (
+      <div data-tipo={personaje.data.tipo} data-origen={personaje.data.origen}>
+        <Card
+          href={`/personajes/${personaje.id}`}
+          title={personaje.data.nombre}
+          excerpt={personaje.data.resumen}
+          badge={personaje.data.tipo.replaceAll('_', ' ')}
+        />
+      </div>
+    ))}
+  </div>
+</BaseLayout>
+
+<script>
+  const tipoSelect = document.querySelector<HTMLSelectElement>('#filtro-tipo');
+  const origenSelect = document.querySelector<HTMLSelectElement>('#filtro-origen');
+  const items = document.querySelectorAll<HTMLElement>('#grid-personajes > div');
+
+  function applyFilters() {
+    const tipo = tipoSelect?.value ?? 'todos';
+    const origen = origenSelect?.value ?? 'todos';
+    items.forEach((item) => {
+      const matchesTipo = tipo === 'todos' || item.dataset.tipo === tipo;
+      const matchesOrigen = origen === 'todos' || item.dataset.origen === origen;
+      item.style.display = matchesTipo && matchesOrigen ? '' : 'none';
+    });
+  }
+
+  tipoSelect?.addEventListener('change', applyFilters);
+  origenSelect?.addEventListener('change', applyFilters);
+</script>

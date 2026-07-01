@@ -1,0 +1,18 @@
+---
+import { withBase } from '../lib/url';
+
+interface Props {
+  href: string;
+  title: string;
+  excerpt?: string;
+  badge?: string;
+}
+
+const { href, title, excerpt, badge } = Astro.props;
+---
+
+<a class="card" href={withBase(href)}>
+  {badge && <span class="badge">{badge}</span>}
+  <h3>{title}</h3>
+  {excerpt && <p>{excerpt}</p>}
+</a>

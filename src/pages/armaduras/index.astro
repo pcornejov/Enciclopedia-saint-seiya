@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const armaduras = (await getCollection('armaduras')).sort((a, b) => a.data.nombre.localeCompare(b.data.nombre));
+---
+
+<BaseLayout title="Armaduras" description="Armaduras y objetos sagrados del universo Saint Seiya.">
+  <h1>Armaduras</h1>
+  <p>{armaduras.length} armaduras catalogadas.</p>
+
+  <div class="grid">
+    {armaduras.map((armadura) => (
+      <Card
+        href={`/armaduras/${armadura.id}`}
+        title={armadura.data.nombre}
+        excerpt={armadura.data.descripcion}
+        badge={armadura.data.tipo}
+      />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+
+const sagas = (await getCollection('sagas')).sort((a, b) => a.data.ordenCanonico - b.data.ordenCanonico);
+---
+
+<BaseLayout title="Sagas" description="Sagas y arcos narrativos del universo Saint Seiya.">
+  <h1>Sagas</h1>
+  <p>{sagas.length} sagas catalogadas, en orden canónico.</p>
+
+  <div class="grid">
+    {sagas.map((saga) => (
+      <Card
+        href={`/sagas/${saga.id}`}
+        title={saga.data.nombre}
+        excerpt={saga.data.sinopsis}
+        badge={saga.data.arco.replaceAll('_', ' ')}
+      />
+    ))}
+  </div>
+</BaseLayout>

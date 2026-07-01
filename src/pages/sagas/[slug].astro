@@ -1,0 +1,55 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import RelationBadge from '../../components/RelationBadge.astro';
+
+export async function getStaticPaths() {
+  const sagas = await getCollection('sagas');
+  return sagas.map((saga) => ({ params: { slug: saga.id }, props: { saga } }));
+}
+
+const { saga } = Astro.props;
+const { Content } = await render(saga);
+const data = saga.data;
+
+const obra = await getEntry(data.obra);
+const personajesClave = await Promise.all(data.personajesClave.map((ref) => getEntry(ref)));
+const lugares = await Promise.all(data.lugares.map((ref) => getEntry(ref)));
+const facciones = await Promise.all(data.facciones.map((ref) => getEntry(ref)));
+---
+
+<EntryLayout title={data.nombre} categoria={data.arco.replaceAll('_', ' ')} description={data.sinopsis}>
+  <Fragment slot="meta">
+    {obra && <span class="chip">Obra: {obra.data.nombre}</span>}
+  </Fragment>
+
+  <p>{data.sinopsis}</p>
+  <Content />
+
+  {personajesClave.length > 0 && (
+    <section>
+      <h2>Personajes clave</h2>
+      <div class="entry-meta">
+        {personajesClave.map((p) => p && <RelationBadge href={`/personajes/${p.id}`} label={p.data.nombre} />)}
+      </div>
+    </section>
+  )}
+
+  {lugares.length > 0 && (
+    <section>
+      <h2>Lugares</h2>
+      <div class="entry-meta">
+        {lugares.map((l) => l && <RelationBadge href={`/lugares/${l.id}`} label={l.data.nombre} />)}
+      </div>
+    </section>
+  )}
+
+  {facciones.length > 0 && (
+    <section>
+      <h2>Facciones</h2>
+      <div class="entry-meta">
+        {facciones.map((f) => f && <RelationBadge href={`/facciones/${f.id}`} label={f.data.nombre} />)}
+      </div>
+    </section>
+  )}
+</EntryLayout>

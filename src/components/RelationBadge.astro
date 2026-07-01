@@ -1,0 +1,13 @@
+---
+import { withBase } from '../lib/url';
+
+interface Props {
+  href: string;
+  label: string;
+  tipo?: string;
+}
+
+const { href, label, tipo } = Astro.props;
+---
+
+<a class="chip" href={withBase(href)}>{tipo ? `${tipo}: ` : ''}{label}</a>

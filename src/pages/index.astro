@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+
+const [personajes, sagas, tecnicas, armaduras, lugares, facciones] = await Promise.all([
+  getCollection('personajes'),
+  getCollection('sagas'),
+  getCollection('tecnicas'),
+  getCollection('armaduras'),
+  getCollection('lugares'),
+  getCollection('facciones'),
+]);
+
+const destacados = personajes.filter((p) => p.data.destacado);
+
+const categorias = [
+  { href: '/personajes', label: 'Personajes', count: personajes.length },
+  { href: '/sagas', label: 'Sagas', count: sagas.length },
+  { href: '/tecnicas', label: 'Técnicas', count: tecnicas.length },
+  { href: '/armaduras', label: 'Armaduras', count: armaduras.length },
+  { href: '/lugares', label: 'Lugares', count: lugares.length },
+  { href: '/facciones', label: 'Facciones', count: facciones.length },
+];
+---
+
+<BaseLayout title="Inicio">
+  <h1>Enciclopedia Saint Seiya</h1>
+  <p>
+    Una enciclopedia en español sobre el manga y anime de Saint Seiya (Caballeros del Zodiaco): personajes, sagas,
+    técnicas, armaduras, lugares y facciones de todo el universo, del canon clásico a los spin-offs.
+  </p>
+
+  <div class="grid">
+    {categorias.map((cat) => (
+      <Card href={cat.href} title={cat.label} excerpt={`${cat.count} entradas`} />
+    ))}
+  </div>
+
+  {destacados.length > 0 && (
+    <>
+      <h2>Destacados</h2>
+      <div class="grid">
+        {destacados.map((personaje) => (
+          <Card
+            href={`/personajes/${personaje.id}`}
+            title={personaje.data.nombre}
+            excerpt={personaje.data.resumen}
+            badge={personaje.data.tipo.replaceAll('_', ' ')}
+          />
+        ))}
+      </div>
+    </>
+  )}
+</BaseLayout>
