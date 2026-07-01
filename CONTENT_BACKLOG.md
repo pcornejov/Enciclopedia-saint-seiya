@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 3 — Camus, Afrodita)
+- Última iteración: 2026-07-01 (loop, Prioridad 4 — Shion, Saga/Ares, Poseidon, Hades, Pandora)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -52,11 +52,11 @@
 - [x] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`) — 2026-07-01
 
 ## Prioridad 4 — Antagonistas clave de Santuario / Hades
-- [ ] Shion de Aries, Patriarca (`personajes/shion-patriarca.mdx`)
-- [ ] Saga / Ares (`personajes/saga-ares.mdx`) — nota: crear como personaje aparte del ítem de Prioridad 3 (Saga de Géminis) si se decide separar la faceta villano, o fusionar en una sola ficha; evaluar al redactar.
-- [ ] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`)
-- [ ] Hades / Alone (`personajes/hades-alone.mdx`)
-- [ ] Pandora (`personajes/pandora.mdx`)
+- [x] Shion de Aries, Patriarca (`personajes/shion-patriarca.mdx`) — 2026-07-01
+- [x] Saga / Ares — decisión: fusionado en una sola ficha, ya cubierto por `personajes/saga-geminis.mdx` (Prioridad 3); no se crea archivo separado — 2026-07-01
+- [x] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`) — 2026-07-01
+- [x] Hades / Alone (`personajes/hades-alone.mdx`) — 2026-07-01
+- [x] Pandora (`personajes/pandora.mdx`) — 2026-07-01
 - [ ] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`)
 - [ ] Minos de Grifo (`personajes/minos-grifo.mdx`)
 - [ ] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`)
