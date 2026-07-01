@@ -42,6 +42,11 @@
 - [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
 - [skip] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Ban", "Bear Ban", "Great Bear Ban", "Big Dipper Ban")
 - [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
+- [ ] Marín de Águila (`personajes/marin-aguila.mdx`)
+- [ ] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`)
+- [ ] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`)
+- [ ] Misty de Lagarto (`personajes/misty-lagarto.mdx`)
+- [ ] Babel de Centauro (`personajes/babel-centauro.mdx`)
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
