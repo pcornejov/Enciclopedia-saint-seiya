@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Kouga y Mars con imagen verificada)
+- Última iteración: 2026-07-01 (image-loop: Balder con imagen verificada — cierra el backlog actual)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -56,7 +56,7 @@
 - [x] Sho (`personajes/sho-saintia.mdx`) — 2026-07-01
 - [x] Kouga (`personajes/kouga-omega.mdx`) — 2026-07-01
 - [x] Mars (`personajes/mars-omega.mdx`) — 2026-07-01
-- [ ] Balder (`personajes/balder-soul-of-gold.mdx`)
+- [x] Balder (`personajes/balder-soul-of-gold.mdx`) — 2026-07-01
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
