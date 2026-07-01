@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 4 — Shion, Saga/Ares, Poseidon, Hades, Pandora)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 4 — Jueces del Infierno)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -57,9 +57,9 @@
 - [x] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`) — 2026-07-01
 - [x] Hades / Alone (`personajes/hades-alone.mdx`) — 2026-07-01
 - [x] Pandora (`personajes/pandora.mdx`) — 2026-07-01
-- [ ] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`)
-- [ ] Minos de Grifo (`personajes/minos-grifo.mdx`)
-- [ ] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`)
+- [x] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`) — 2026-07-01
+- [x] Minos de Grifo (`personajes/minos-grifo.mdx`) — 2026-07-01
+- [x] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`) — 2026-07-01
 
 ## Prioridad 5 — Técnicas principales
 - [ ] Pegasus Ryu Sei Ken (`tecnicas/pegasus-ryu-sei-ken.mdx`)
