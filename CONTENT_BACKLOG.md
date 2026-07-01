@@ -6,18 +6,18 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (scaffold inicial, Fase 0)
+- Última iteración: 2026-07-01 (loop, Prioridad 0 — obras spin-off)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
 > `sagas.obra` es una referencia obligatoria: estos ítems deben existir antes de poder crear la saga correspondiente.
 - [x] Manga original de Masami Kurumada (`obras/manga-saint-seiya.mdx`) — 2026-07-01
 - [x] Anime clásico (Toei, 1986-1989) (`obras/anime-clasico.mdx`) — 2026-07-01
-- [ ] Películas clásicas (`obras/peliculas-clasicas.mdx`)
-- [ ] Saint Seiya: The Lost Canvas (`obras/lost-canvas.mdx`)
-- [ ] Saint Seiya: Episode G (`obras/episode-g.mdx`)
-- [ ] Saint Seiya: Next Dimension (`obras/next-dimension.mdx`)
-- [ ] Saintia Sho (`obras/saintia-sho.mdx`)
+- [x] Películas clásicas (`obras/peliculas-clasicas.mdx`) — 2026-07-01
+- [x] Saint Seiya: The Lost Canvas (`obras/lost-canvas.mdx`) — 2026-07-01
+- [x] Saint Seiya: Episode G (`obras/episode-g.mdx`) — 2026-07-01
+- [x] Saint Seiya: Next Dimension (`obras/next-dimension.mdx`) — 2026-07-01
+- [x] Saintia Sho (`obras/saintia-sho.mdx`) — 2026-07-01
 - [ ] Saint Seiya Omega (`obras/omega.mdx`)
 - [ ] Saint Seiya Soul of Gold (`obras/soul-of-gold.mdx`)
 
