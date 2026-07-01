@@ -48,6 +48,11 @@
 - [ ] Armadura de Géminis (`armaduras/armadura-geminis.mdx`)
 - [ ] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`)
 - [ ] Armadura de Leo (`armaduras/armadura-leo.mdx`)
+- [ ] Armadura de Virgo (`armaduras/armadura-virgo.mdx`)
+- [ ] Armadura de Libra (`armaduras/armadura-libra.mdx`)
+- [ ] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`)
+- [ ] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`)
+- [ ] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.
