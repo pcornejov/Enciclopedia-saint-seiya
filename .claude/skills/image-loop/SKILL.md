@@ -54,18 +54,24 @@ riesgo (no nulo) que usan la mayoría de las wikis de fans no comerciales. Por e
    y 10 de ese skill) — usar las mismas herramientas MCP de GitHub, mismo `merge_method: squash`, mismo
    `git reset --hard origin/main` + `push --force-with-lease` sobre `content/auto-loop` (ya autorizado por el
    usuario).
-10. **Encadenar la siguiente iteración de inmediato**, igual que `content-loop`, hasta agotar `IMAGE_BACKLOG.md` o
-    toparse con un bloqueo real.
-11. **Condición de parada**: si `IMAGE_BACKLOG.md` no tiene ítems sin marcar (ni `[ ]`), reportarlo y no generar
-    commit ni PR vacío.
+10. **Encadenar la siguiente iteración de inmediato, ALTERNANDO con `content-loop`** (a pedido del usuario): al
+    terminar esta iteración, no volver a invocar `image-loop` — invocar el skill **`content-loop`** (Skill tool)
+    ahora mismo. `content-loop` avanza el backlog de contenido y, al terminar, vuelve a invocar `image-loop`, y así
+    sucesivamente. Reglas de la alternancia:
+    - Si `IMAGE_BACKLOG.md` queda sin ítems pendientes pero `CONTENT_BACKLOG.md` todavía tiene, igual invocar
+      `content-loop` (para que siga avanzando) en vez de detener toda la cadena.
+    - Si **ambos** backlogs (`IMAGE_BACKLOG.md` y `CONTENT_BACKLOG.md`) están sin ítems pendientes, ahí sí parar
+      del todo (no invocar a ningún skill).
+    - El cron de `/loop` sigue programado cada 30 min como red de seguridad, solo por si la cadena se corta.
+11. **Condición de parada de este skill**: si `IMAGE_BACKLOG.md` no tiene ítems sin marcar (ni `[ ]`), no generar
+    commit ni PR vacío en esta corrida — pero igual seguir la regla de alternancia del paso 10 antes de terminar
+    el turno.
 
 ## Notas
 
-- Este skill **no** reemplaza a `content-loop`: si ambos backlogs tienen trabajo pendiente, priorizar terminar la
-  cadena que esté corriendo antes de arrancar la otra, para no mezclar tipos de cambio en un mismo PR.
-- Cuando `content-loop` agregue personajes/armaduras nuevas, agregar los ítems correspondientes a
-  `IMAGE_BACKLOG.md` (con su path exacto) antes de que `image-loop` pueda tomarlos — si `image-loop` corre y
-  encuentra un personaje en `src/content/personajes/` que no está listado en `IMAGE_BACKLOG.md`, agregarlo primero
-  como parte de la misma iteración.
+- Cuando `content-loop` agregue personajes/armaduras nuevas, las agrega también a `IMAGE_BACKLOG.md` en el mismo
+  commit (ver notas de `content-loop`). Si de todas formas `image-loop` encuentra un personaje en
+  `src/content/personajes/` que no está listado en `IMAGE_BACKLOG.md`, agregarlo primero como parte de la misma
+  iteración antes de seguir.
 - No hay campo de imagen para `sagas`, `tecnicas`, `lugares` ni `facciones` en el schema — este skill es
   exclusivamente para `personajes` y `armaduras`.
