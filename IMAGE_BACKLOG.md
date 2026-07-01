@@ -58,6 +58,7 @@
 - [skip] Armadura de Dragón (`armaduras/armadura-dragon.mdx`) — 2026-07-01 (ídem)
 - [skip] Armadura de Cisne (`armaduras/armadura-cisne.mdx`) — 2026-07-01 (ídem)
 - [skip] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`) — 2026-07-01 (ídem)
+- [ ] Armadura de Fénix (`armaduras/armadura-fenix.mdx`)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.

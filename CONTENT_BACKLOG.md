@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Acuario, Piscis, Dragón, Cisne, Andrómeda)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 6 — Armadura de Fénix)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -90,7 +90,7 @@
 - [x] Armadura de Dragón (`armaduras/armadura-dragon.mdx`) — 2026-07-01
 - [x] Armadura de Cisne (`armaduras/armadura-cisne.mdx`) — 2026-07-01
 - [x] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`) — 2026-07-01
-- [ ] Armadura de Fénix (`armaduras/armadura-fenix.mdx`)
+- [x] Armadura de Fénix (`armaduras/armadura-fenix.mdx`) — 2026-07-01
 
 ## Prioridad 7 — Lugares clave
 - [x] Santuario de Athena (`lugares/santuario.mdx`) — 2026-07-01
