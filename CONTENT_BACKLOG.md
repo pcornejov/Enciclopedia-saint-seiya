@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 3 — Shaka, Dohko, Milo, Aioros, Shura)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 3 — Camus, Afrodita)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -48,8 +48,8 @@
 - [x] Milo de Escorpio (`personajes/milo-escorpio.mdx`) — 2026-07-01
 - [x] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`) — 2026-07-01
 - [x] Shura de Capricornio (`personajes/shura-capricornio.mdx`) — 2026-07-01
-- [ ] Camus de Acuario (`personajes/camus-acuario.mdx`)
-- [ ] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`)
+- [x] Camus de Acuario (`personajes/camus-acuario.mdx`) — 2026-07-01
+- [x] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`) — 2026-07-01
 
 ## Prioridad 4 — Antagonistas clave de Santuario / Hades
 - [ ] Shion de Aries, Patriarca (`personajes/shion-patriarca.mdx`)
