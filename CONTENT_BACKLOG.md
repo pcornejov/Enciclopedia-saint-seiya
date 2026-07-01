@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 0 — obras spin-off)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 0 — obras spin-off restantes)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -18,8 +18,8 @@
 - [x] Saint Seiya: Episode G (`obras/episode-g.mdx`) — 2026-07-01
 - [x] Saint Seiya: Next Dimension (`obras/next-dimension.mdx`) — 2026-07-01
 - [x] Saintia Sho (`obras/saintia-sho.mdx`) — 2026-07-01
-- [ ] Saint Seiya Omega (`obras/omega.mdx`)
-- [ ] Saint Seiya Soul of Gold (`obras/soul-of-gold.mdx`)
+- [x] Saint Seiya Omega (`obras/omega.mdx`) — 2026-07-01
+- [x] Saint Seiya Soul of Gold (`obras/soul-of-gold.mdx`) — 2026-07-01
 
 ## Prioridad 1 — Sagas clásicas (orden canónico)
 - [x] Saga de Santuario (`sagas/saga-santuario.mdx`) — 2026-07-01
