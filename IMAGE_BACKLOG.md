@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Jabu, Ichi, Nachi y Geki con imagen verificada; Ban marcado [skip])
+- Última iteración: 2026-07-01 (image-loop: Marín, Shaina y Misty con imagen verificada; Albiore y Babel marcados [skip])
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -42,11 +42,11 @@
 - [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
 - [skip] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Ban", "Bear Ban", "Great Bear Ban", "Big Dipper Ban")
 - [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
-- [ ] Marín de Águila (`personajes/marin-aguila.mdx`)
-- [ ] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`)
-- [ ] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`)
-- [ ] Misty de Lagarto (`personajes/misty-lagarto.mdx`)
-- [ ] Babel de Centauro (`personajes/babel-centauro.mdx`)
+- [x] Marín de Águila (`personajes/marin-aguila.mdx`) — 2026-07-01
+- [x] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`) — 2026-07-01
+- [skip] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Albiore", "Cepheus Albiore", "Albiore Cepheus")
+- [x] Misty de Lagarto (`personajes/misty-lagarto.mdx`) — 2026-07-01
+- [skip] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Babel", "Centaur Babel", "Babel Centauro")
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
