@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 1 — Saga de Hades: Inframundo)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 1 — Saga de Hades: Elysion)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -27,7 +27,7 @@
 - [x] Saga de Poseidon (`sagas/saga-poseidon.mdx`) — 2026-07-01
 - [x] Saga de Hades — Santuario (`sagas/saga-hades-santuario.mdx`) — 2026-07-01
 - [x] Saga de Hades — Inframundo (`sagas/saga-hades-inframundo.mdx`) — 2026-07-01
-- [ ] Saga de Hades — Elysion (`sagas/saga-hades-elysion.mdx`)
+- [x] Saga de Hades — Elysion (`sagas/saga-hades-elysion.mdx`) — 2026-07-01
 
 ## Prioridad 2 — Personajes centrales (Bronce protagonistas + Athena)
 - [x] Seiya de Pegaso (`personajes/seiya-pegaso.mdx`) — 2026-07-01
