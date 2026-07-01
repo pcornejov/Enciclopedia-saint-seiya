@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 1 — Saga de Poseidon)
+- Última iteración: 2026-07-01 (loop, Prioridad 1 — Saga de Hades: Santuario)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -25,7 +25,7 @@
 - [x] Saga de Santuario (`sagas/saga-santuario.mdx`) — 2026-07-01
 - [x] Saga de Asgard (`sagas/saga-asgard.mdx`) — 2026-07-01
 - [x] Saga de Poseidon (`sagas/saga-poseidon.mdx`) — 2026-07-01
-- [ ] Saga de Hades — Santuario (`sagas/saga-hades-santuario.mdx`)
+- [x] Saga de Hades — Santuario (`sagas/saga-hades-santuario.mdx`) — 2026-07-01
 - [ ] Saga de Hades — Inframundo (`sagas/saga-hades-inframundo.mdx`)
 - [ ] Saga de Hades — Elysion (`sagas/saga-hades-elysion.mdx`)
 
