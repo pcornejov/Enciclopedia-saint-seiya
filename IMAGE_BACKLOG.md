@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Aioros, Shura, Camus, Afrodita, Shion, Poseidon, Hades, Pandora)
+- Última iteración: 2026-07-01 (image-loop: Aiacos, Minos, Radamanthys — cierra sección Personajes)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -34,9 +34,9 @@
 - [x] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`) — 2026-07-01
 - [x] Hades / Alone (`personajes/hades-alone.mdx`) — 2026-07-01
 - [x] Pandora (`personajes/pandora.mdx`) — 2026-07-01
-- [ ] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`)
-- [ ] Minos de Grifo (`personajes/minos-grifo.mdx`)
-- [ ] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`)
+- [x] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`) — 2026-07-01
+- [x] Minos de Grifo (`personajes/minos-grifo.mdx`) — 2026-07-01
+- [x] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`) — 2026-07-01
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
