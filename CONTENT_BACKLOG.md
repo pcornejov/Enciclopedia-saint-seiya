@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 10 — Saintia Sho: Sho)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — Saint Seiya Omega: Kouga, Mars; corrige faccion indebida en Alone de Lost Canvas)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -137,7 +137,8 @@
 ### Saintia Sho
 - [x] Sho (`personajes/sho-saintia.mdx`) — 2026-07-01
 ### Saint Seiya Omega
-- [ ] Personajes clave de Saint Seiya Omega (agregar sub-ítems concretos con su path antes de tomarlos)
+- [x] Kouga (`personajes/kouga-omega.mdx`) — 2026-07-01
+- [x] Mars (`personajes/mars-omega.mdx`) — 2026-07-01
 ### Soul of Gold
 - [ ] Personajes clave de Soul of Gold (agregar sub-ítems concretos con su path antes de tomarlos)
 - (Lista abierta: seguir ampliando cada bloque de spin-off con ítems concretos con su path antes de tomarlos)
