@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 9 — Jabu, Ichi, Nachi, Ban y Geki, rivales del Torneo Galáctico)
+- Última iteración: 2026-07-01 (loop, Prioridad 9 — Marín, Shaina, Albiore, Misty y Babel; cierra la lista actual de Prioridad 9)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -114,11 +114,11 @@
 - [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
 - [x] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01
 - [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
-- [ ] Marín de Águila (`personajes/marin-aguila.mdx`)
-- [ ] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`)
-- [ ] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`)
-- [ ] Misty de Lagarto (`personajes/misty-lagarto.mdx`)
-- [ ] Babel de Centauro (`personajes/babel-centauro.mdx`)
+- [x] Marín de Águila (`personajes/marin-aguila.mdx`) — 2026-07-01
+- [x] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`) — 2026-07-01
+- [x] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`) — 2026-07-01
+- [x] Misty de Lagarto (`personajes/misty-lagarto.mdx`) — 2026-07-01
+- [x] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01
 - (Lista abierta: ampliar más a medida que el backlog principal avanza; agregar ítems concretos con su path antes de tomarlos)
 
 ## Prioridad 10 — Spin-offs y expansión (después de cubrir el canon clásico)
