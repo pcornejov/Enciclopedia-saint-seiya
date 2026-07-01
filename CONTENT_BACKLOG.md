@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 9 — Marín, Shaina, Albiore, Misty y Babel; cierra la lista actual de Prioridad 9)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — The Lost Canvas: Tenma, Alone, Sasha, Regulus de Leo)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -122,10 +122,19 @@
 - (Lista abierta: ampliar más a medida que el backlog principal avanza; agregar ítems concretos con su path antes de tomarlos)
 
 ## Prioridad 10 — Spin-offs y expansión (después de cubrir el canon clásico)
-- [ ] Personajes clave de The Lost Canvas (Tenma, Alone joven, Sasha, Pegaso/Regulus, etc.)
-- [ ] Personajes clave de Episode G
-- [ ] Personajes clave de Next Dimension
-- [ ] Personajes clave de Saintia Sho
-- [ ] Personajes clave de Saint Seiya Omega
-- [ ] Personajes clave de Soul of Gold
-- (Lista abierta: al llegar a esta prioridad, agregar sub-ítems concretos con su path antes de tomarlos, siguiendo el mismo formato que las prioridades anteriores)
+### The Lost Canvas
+- [x] Tenma (`personajes/tenma-lost-canvas.mdx`) — 2026-07-01
+- [x] Alone (`personajes/alone-lost-canvas.mdx`) — 2026-07-01
+- [x] Sasha (`personajes/sasha-lost-canvas.mdx`) — 2026-07-01
+- [x] Regulus de Leo (`personajes/regulus-leo.mdx`) — 2026-07-01
+### Episode G
+- [ ] Personajes clave de Episode G (agregar sub-ítems concretos con su path antes de tomarlos)
+### Next Dimension
+- [ ] Personajes clave de Next Dimension (agregar sub-ítems concretos con su path antes de tomarlos)
+### Saintia Sho
+- [ ] Personajes clave de Saintia Sho (agregar sub-ítems concretos con su path antes de tomarlos)
+### Saint Seiya Omega
+- [ ] Personajes clave de Saint Seiya Omega (agregar sub-ítems concretos con su path antes de tomarlos)
+### Soul of Gold
+- [ ] Personajes clave de Soul of Gold (agregar sub-ítems concretos con su path antes de tomarlos)
+- (Lista abierta: seguir ampliando cada bloque de spin-off con ítems concretos con su path antes de tomarlos)
