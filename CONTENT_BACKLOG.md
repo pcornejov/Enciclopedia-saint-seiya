@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 8 — Ejército de Poseidon, Guerreros Dioses de Asgard, Ejército de Hades; cierra Prioridad 8)
+- Última iteración: 2026-07-01 (loop, Prioridad 9 — Jabu, Ichi, Nachi, Ban y Geki, rivales del Torneo Galáctico)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -109,9 +109,17 @@
 - [x] Ejército de Hades / Espectros (`facciones/ejercito-hades.mdx`) — 2026-07-01
 
 ## Prioridad 9 — Personajes secundarios (Plata / Bronce restantes)
-- [ ] Ichi, Nachi, Jabu, Geki y otros Santos de Bronce de la Escuela Athena (evaluar de a uno, un `.mdx` por personaje)
-- [ ] Santos de Plata relevantes (Marín de Águila, Shaina de Ofiuco, Dokho ya cubierto en P3, Albiore de Cefeo, etc.)
-- (Lista abierta: ampliar a medida que el backlog principal avanza; agregar ítems concretos con su path antes de tomarlos)
+- [x] Jabu de Unicornio (`personajes/jabu-unicornio.mdx`) — 2026-07-01
+- [x] Ichi de Hydra (`personajes/ichi-hydra.mdx`) — 2026-07-01
+- [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
+- [x] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01
+- [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
+- [ ] Marín de Águila (`personajes/marin-aguila.mdx`)
+- [ ] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`)
+- [ ] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`)
+- [ ] Misty de Lagarto (`personajes/misty-lagarto.mdx`)
+- [ ] Babel de Centauro (`personajes/babel-centauro.mdx`)
+- (Lista abierta: ampliar más a medida que el backlog principal avanza; agregar ítems concretos con su path antes de tomarlos)
 
 ## Prioridad 10 — Spin-offs y expansión (después de cubrir el canon clásico)
 - [ ] Personajes clave de The Lost Canvas (Tenma, Alone joven, Sasha, Pegaso/Regulus, etc.)
