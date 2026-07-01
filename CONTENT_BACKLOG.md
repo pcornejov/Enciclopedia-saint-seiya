@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 3 — Mu, Aldebarán, Saga, Deathmask, Aioria)
+- Última iteración: 2026-07-01 (loop, Prioridad 3 — Shaka, Dohko, Milo, Aioros, Shura)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -43,11 +43,11 @@
 - [x] Saga de Géminis (`personajes/saga-geminis.mdx`) — 2026-07-01
 - [x] Deathmask de Cáncer (`personajes/deathmask-cancer.mdx`) — 2026-07-01
 - [x] Aioria de Leo (`personajes/aioria-leo.mdx`) — 2026-07-01
-- [ ] Shaka de Virgo (`personajes/shaka-virgo.mdx`)
-- [ ] Dohko de Libra (`personajes/dohko-libra.mdx`)
-- [ ] Milo de Escorpio (`personajes/milo-escorpio.mdx`)
-- [ ] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`)
-- [ ] Shura de Capricornio (`personajes/shura-capricornio.mdx`)
+- [x] Shaka de Virgo (`personajes/shaka-virgo.mdx`) — 2026-07-01
+- [x] Dohko de Libra (`personajes/dohko-libra.mdx`) — 2026-07-01
+- [x] Milo de Escorpio (`personajes/milo-escorpio.mdx`) — 2026-07-01
+- [x] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`) — 2026-07-01
+- [x] Shura de Capricornio (`personajes/shura-capricornio.mdx`) — 2026-07-01
 - [ ] Camus de Acuario (`personajes/camus-acuario.mdx`)
 - [ ] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`)
 
