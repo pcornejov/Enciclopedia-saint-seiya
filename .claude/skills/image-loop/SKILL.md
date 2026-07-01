@@ -1,6 +1,6 @@
 ---
 name: image-loop
-description: Busca y agrega imágenes verificadas (vía AniList) a personajes y armaduras de la Enciclopedia Saint Seiya siguiendo IMAGE_BACKLOG.md. Loop autónomo separado de content-loop, especializado solo en imágenes. Usar cuando toque avanzar el backlog de imágenes.
+description: Busca y agrega imágenes verificadas (vía AniList, con Jikan/MyAnimeList como fallback) a personajes y armaduras de la Enciclopedia Saint Seiya siguiendo IMAGE_BACKLOG.md. Loop autónomo separado de content-loop, especializado solo en imágenes. Usar cuando toque avanzar el backlog de imágenes.
 ---
 
 # Image Loop — Enciclopedia Saint Seiya
@@ -14,14 +14,16 @@ GitHub); acá solo se documenta lo específico de imágenes.
 
 El usuario pidió automatizar imágenes. Se evaluó y descartó bajar/republicar arte oficial "a mano" o generarlo con
 IA por defecto; se optó por **AniList** (`https://graphql.anilist.co`, GraphQL, sin API key) porque expone
-imágenes de personajes ya alojadas en su propio CDN. Importante: **esto no elimina el copyright** — las imágenes
-siguen siendo arte oficial de Toei/Kurumada/Shueisha, solo que alojado por AniList. Es la misma práctica de bajo
-riesgo (no nulo) que usan la mayoría de las wikis de fans no comerciales. Por eso:
+imágenes de personajes ya alojadas en su propio CDN, con **Jikan/MyAnimeList** (`https://api.jikan.moe/v4`, REST,
+sin API key) como fallback cuando AniList no tiene match. Importante: **esto no elimina el copyright** — las
+imágenes siguen siendo arte oficial de Toei/Kurumada/Shueisha, solo que alojadas por AniList o MyAnimeList. Es la
+misma práctica de bajo riesgo (no nulo) que usan la mayoría de las wikis de fans no comerciales. Por eso:
 
-- Siempre usar la URL remota de AniList directamente (`imagen: z.string().url()`), **nunca descargar y commitear
-  el binario al repo** — así no creamos una copia persistente propia, solo un enlace/embed, que es la forma de
-  menor riesgo.
-- Siempre completar `imagenAtribucion` con el crédito a AniList + Toei/Kurumada.
+- Siempre usar la URL remota de AniList o Jikan/MAL directamente (`imagen: z.string().url()`), **nunca descargar y
+  commitear el binario al repo** — así no creamos una copia persistente propia, solo un enlace/embed, que es la
+  forma de menor riesgo.
+- Siempre completar `imagenAtribucion` con el crédito a la fuente usada (AniList o MyAnimeList/Jikan) + Toei/Kurumada.
+- Jikan tiene rate limit bajo (~3 req/seg, ~60/min) — espaciar las consultas con una pequeña pausa entre requests.
 
 ## Pasos
 
@@ -41,11 +43,35 @@ riesgo (no nulo) que usan la mayoría de las wikis de fans no comerciales. Por e
    - Si hay match verificado: `imagen` = el `image.large` de ese personaje; `imagenAtribucion` = algo como
      `Imagen vía AniList (anilist.co/character/<id>) — © Toei Animation / Masami Kurumada` (ajustar el crédito de
      autor si la ficha indica otro origen, ej. Shiori Teshirogi para personajes de The Lost Canvas).
-   - Si no hay match verificado: dejar el `.mdx` sin tocar y marcar el ítem como `[skip]` en `IMAGE_BACKLOG.md`
-     (con fecha), no como `[x]`.
-5. **Armaduras**: la búsqueda de personajes de AniList no cubre piezas de equipo. Salvo que aparezca un resultado
-   verificado específico para la armadura misma (raro), marcar como `[skip]` directamente. No usar la imagen del
-   personaje que la porta como si fuera la imagen de la armadura — son entidades distintas y sería incorrecto.
+   - Si no hay match verificado en AniList: **antes de marcar `[skip]`, probar el fallback de Jikan** (ver paso
+     4bis) — no marcar `[skip]` directamente solo porque AniList no encontró nada.
+4bis. **Fallback en Jikan/MyAnimeList si AniList no dio match**:
+   - La búsqueda libre de Jikan (`GET /v4/characters?q=<nombre>`) trae demasiado ruido de otras series (nombres
+     cortos como "Ban" devuelven decenas de personajes de otros animes) — **no usar ese endpoint solo, siempre
+     verificar contra el roster oficial de la obra**.
+   - Mejor: resolver primero el `mal_id` de la obra correspondiente (`GET /v4/anime?q=Saint Seiya` — la serie
+     clásica es id `1254`; Lost Canvas es `6171`/`9130`; usar el `obraPrincipal` del `.mdx` como pista de cuál
+     obra buscar) y pedir su roster completo: `GET /v4/anime/<mal_id>/characters`. Esa respuesta lista todos los
+     personajes que oficialmente pertenecen a esa obra (con su `role`: Main/Supporting), lo cual **ya es la
+     verificación** — no hace falta chequear títulos de media por separado como en AniList.
+   - Buscar el nombre (o alias) del personaje dentro de ese roster (los nombres en Jikan suelen venir como
+     "Constelación, Nombre", ej. `"Lionet, Ban"`, `"Centaurus, Babel"` — revisar variantes con y sin coma).
+   - Si aparece: usar `GET /v4/characters/<mal_id>` para obtener `images.jpg.image_url`; `imagen` = esa URL;
+     `imagenAtribucion` = `Imagen vía MyAnimeList/Jikan (myanimelist.net/character/<mal_id>) — © Toei Animation /
+     Masami Kurumada` (ajustar autor según la obra).
+   - **Aprovechar el roster para detectar errores de datos**: si el nombre de constelación/rango que aparece en
+     Jikan no coincide con el `rangoArmadura`/alias ya escritos en el `.mdx` (ver caso real: "Ban de Osa Mayor"
+     resultó ser incorrecto, el roster oficial lo lista como "Lionet, Ban" = León Menor), corregir el `.mdx`
+     (nombre, alias, `rangoArmadura`, y si aplica renombrar el archivo/slug) como parte de la misma iteración, y
+     dejar constancia del cambio en el mensaje de commit y en `CONTENT_BACKLOG.md`.
+   - Si tampoco aparece en el roster de Jikan: recién ahí marcar `[skip]` en `IMAGE_BACKLOG.md`, indicando que se
+     probó tanto AniList como Jikan.
+   - Rate limit de Jikan: espaciar las consultas (una pequeña pausa entre requests) para no chocar con el límite
+     de ~3 req/seg.
+5. **Armaduras**: ni la búsqueda de personajes de AniList ni la de Jikan cubren piezas de equipo (ambas son bases
+   de datos de personajes, no de objetos). Salvo que aparezca un resultado verificado específico para la armadura
+   misma (raro), marcar como `[skip]` directamente. No usar la imagen del personaje que la porta como si fuera la
+   imagen de la armadura — son entidades distintas y sería incorrecto.
 6. **Actualizar `IMAGE_BACKLOG.md`**: marcar cada ítem del lote como `[x]` (con imagen) o `[skip]` (sin match),
    ambos con fecha. Actualizar "Última iteración" en "Estado global".
 7. **Validar con `npm run build`** antes de commitear — el schema exige que `imagen` sea una URL válida.

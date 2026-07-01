@@ -112,7 +112,7 @@
 - [x] Jabu de Unicornio (`personajes/jabu-unicornio.mdx`) — 2026-07-01
 - [x] Ichi de Hydra (`personajes/ichi-hydra.mdx`) — 2026-07-01
 - [x] Nachi de Lobo (`personajes/nachi-lobo.mdx`) — 2026-07-01
-- [x] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`) — 2026-07-01
+- [x] Ban de León Menor (`personajes/ban-leon-menor.mdx`) — 2026-07-01 (corregido de "Osa Mayor" a "León Menor" el 2026-07-01, según roster oficial del anime vía Jikan)
 - [x] Geki de Oso (`personajes/geki-oso.mdx`) — 2026-07-01
 - [x] Marín de Águila (`personajes/marin-aguila.mdx`) — 2026-07-01
 - [x] Shaina de Ofiuco (`personajes/shaina-ofiuco.mdx`) — 2026-07-01
