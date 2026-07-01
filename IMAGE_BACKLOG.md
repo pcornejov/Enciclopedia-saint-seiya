@@ -37,6 +37,11 @@
 - [x] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`) — 2026-07-01
 - [x] Minos de Grifo (`personajes/minos-grifo.mdx`) — 2026-07-01
 - [x] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`) — 2026-07-01
+- [ ] Jabu de Unicornio (`personajes/jabu-unicornio.mdx`)
+- [ ] Ichi de Hydra (`personajes/ichi-hydra.mdx`)
+- [ ] Nachi de Lobo (`personajes/nachi-lobo.mdx`)
+- [ ] Ban de Osa Mayor (`personajes/ban-osa-mayor.mdx`)
+- [ ] Geki de Oso (`personajes/geki-oso.mdx`)
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
