@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Aiacos, Minos, Radamanthys — cierra sección Personajes)
+- Última iteración: 2026-07-01 (image-loop: 16 armaduras marcadas [skip] — AniList no cubre piezas de equipo)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -42,22 +42,22 @@
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
 > van a terminar en `[skip]` salvo que se encuentre una imagen de la armadura específica (no del personaje que la
 > porta) en algún campo de descripción/imagen de la obra relacionada.
-- [ ] Armadura de Pegaso (`armaduras/armadura-pegaso.mdx`)
-- [ ] Armadura de Aries (`armaduras/armadura-aries.mdx`)
-- [ ] Armadura de Tauro (`armaduras/armadura-tauro.mdx`)
-- [ ] Armadura de Géminis (`armaduras/armadura-geminis.mdx`)
-- [ ] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`)
-- [ ] Armadura de Leo (`armaduras/armadura-leo.mdx`)
-- [ ] Armadura de Virgo (`armaduras/armadura-virgo.mdx`)
-- [ ] Armadura de Libra (`armaduras/armadura-libra.mdx`)
-- [ ] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`)
-- [ ] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`)
-- [ ] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`)
-- [ ] Armadura de Acuario (`armaduras/armadura-acuario.mdx`)
-- [ ] Armadura de Piscis (`armaduras/armadura-piscis.mdx`)
-- [ ] Armadura de Dragón (`armaduras/armadura-dragon.mdx`)
-- [ ] Armadura de Cisne (`armaduras/armadura-cisne.mdx`)
-- [ ] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`)
+- [skip] Armadura de Pegaso (`armaduras/armadura-pegaso.mdx`) — 2026-07-01 (sin match en AniList: no indexa piezas de equipo)
+- [skip] Armadura de Aries (`armaduras/armadura-aries.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Tauro (`armaduras/armadura-tauro.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Géminis (`armaduras/armadura-geminis.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Leo (`armaduras/armadura-leo.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Virgo (`armaduras/armadura-virgo.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Libra (`armaduras/armadura-libra.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Acuario (`armaduras/armadura-acuario.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Piscis (`armaduras/armadura-piscis.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Dragón (`armaduras/armadura-dragon.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Cisne (`armaduras/armadura-cisne.mdx`) — 2026-07-01 (ídem)
+- [skip] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`) — 2026-07-01 (ídem)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.
