@@ -24,10 +24,6 @@ jobs:
         uses: withastro/action@v3
         with:
           node-version: 22
-      - name: Subir artefacto de Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
 
   deploy:
     needs: build
