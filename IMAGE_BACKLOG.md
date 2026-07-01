@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Marín, Shaina y Misty con imagen verificada; Albiore y Babel marcados [skip])
+- Última iteración: 2026-07-01 (image-loop: Tenma, Alone, Sasha y Regulus de Leo con imagen verificada — cierra el backlog actual)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -47,10 +47,10 @@
 - [skip] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Albiore", "Cepheus Albiore", "Albiore Cepheus")
 - [x] Misty de Lagarto (`personajes/misty-lagarto.mdx`) — 2026-07-01
 - [skip] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Babel", "Centaur Babel", "Babel Centauro")
-- [ ] Tenma (`personajes/tenma-lost-canvas.mdx`)
-- [ ] Alone (`personajes/alone-lost-canvas.mdx`)
-- [ ] Sasha (`personajes/sasha-lost-canvas.mdx`)
-- [ ] Regulus de Leo (`personajes/regulus-leo.mdx`)
+- [x] Tenma (`personajes/tenma-lost-canvas.mdx`) — 2026-07-01
+- [x] Alone (`personajes/alone-lost-canvas.mdx`) — 2026-07-01
+- [x] Sasha (`personajes/sasha-lost-canvas.mdx`) — 2026-07-01
+- [x] Regulus de Leo (`personajes/regulus-leo.mdx`) — 2026-07-01
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
