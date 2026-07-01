@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 10 — Episode G: Kanon de Géminis)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — Next Dimension: Abel)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -131,7 +131,9 @@
 - [x] Kanon de Géminis (`personajes/kanon-geminis.mdx`) — 2026-07-01
 - (Aioria y Saga ya cubiertos en Prioridad 3, protagonizan también Episode G en una etapa temprana de su historia)
 ### Next Dimension
-- [ ] Personajes clave de Next Dimension (agregar sub-ítems concretos con su path antes de tomarlos)
+- [x] Abel (`personajes/abel-next-dimension.mdx`) — 2026-07-01
+- (Shion, Dohko, Pandora, Marín, Shaina y Alone ya cubiertos en prioridades previas; Next Dimension los retrata en
+  una era anterior de la misma reencarnación)
 ### Saintia Sho
 - [ ] Personajes clave de Saintia Sho (agregar sub-ítems concretos con su path antes de tomarlos)
 ### Saint Seiya Omega
