@@ -5,10 +5,17 @@ description: Agrega el siguiente lote de contenido a la Enciclopedia Saint Seiya
 
 # Content Loop — Enciclopedia Saint Seiya
 
-Cada corrida de este skill es **una iteración autónoma**: investiga, redacta, valida, commitea y pushea sin pedir
-confirmación. Trabaja siempre sobre la rama `content/auto-loop` (nunca sobre `main` directo).
+Cada corrida de este skill es **una iteración autónoma**: investiga, redacta, valida, commitea, pushea, abre/mergea el
+PR a `main` y dispara el deploy a GitHub Pages — todo sin pedir confirmación. El trabajo de contenido se hace sobre
+la rama `content/auto-loop` (nunca se commitea directo a `main`), pero al final de cada iteración esa rama se
+mergea a `main` automáticamente para que el sitio publicado se vea actualizado en cada corrida.
 
 Antes de empezar, leer `AGENTS.md`/`CLAUDE.md` (convenciones del proyecto) si no se hizo en esta sesión.
+
+Para los pasos de GitHub (crear/mergear PR) usar las herramientas MCP de GitHub (`mcp__github__create_pull_request`,
+`mcp__github__merge_pull_request`, `mcp__github__pull_request_read` con método `get`/`get_status`) — esta sesión no
+tiene CLI `gh`. Si en otro entorno solo hay `gh` disponible, usar `gh pr create` / `gh pr merge --squash` como
+equivalente.
 
 ## Pasos
 
@@ -32,9 +39,16 @@ Antes de empezar, leer `AGENTS.md`/`CLAUDE.md` (convenciones del proyecto) si no
 8. **Commit + push autónomo** a `content/auto-loop`, con mensaje de commit descriptivo del bloque cubierto, por ejemplo:
    `content(personajes): añade fichas de Shiryu, Hyoga y Shun (P2)`
    Incluir en el mismo commit tanto los `.mdx` nuevos/editados como el `CONTENT_BACKLOG.md` actualizado.
-9. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit vacío.
+9. **Abrir y mergear el PR a `main`, sin pedir confirmación**:
+   - Buscar si ya existe un PR abierto `content/auto-loop` → `main` (`mcp__github__pull_request_read` método `get`, o listar PRs abiertos). Si existe, ya quedó actualizado con el push del paso 8.
+   - Si no existe, crearlo con `mcp__github__create_pull_request` (`head: content/auto-loop`, `base: main`), con un título/resumen breve del lote de esta iteración.
+   - Antes de mergear, chequear el estado del último commit (`mcp__github__pull_request_read` método `get_status` o `get_check_runs`) por si hay checks de CI configurados; si algún check obligatorio está en curso o falló, no forzar el merge — reportarlo y dejarlo para la próxima iteración.
+   - Mergear con `mcp__github__merge_pull_request` (`merge_method: squash`). Esto pushea a `main` y dispara automáticamente `.github/workflows/deploy.yml`, publicando el cambio en GitHub Pages en 1-2 minutos.
+   - No hace falta resetear ni recrear `content/auto-loop` después del merge: la próxima iteración sigue commiteando sobre la misma rama; el próximo PR va a mostrar solo el diff nuevo aunque el historial no haga fast-forward.
+10. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío.
 
 ## Notas
 
 - El campo `imagen` de `personajes` queda sin llenar — no descargar ni inventar imágenes.
 - Las listas abiertas del backlog (Prioridad 9 y 10) no tienen paths concretos todavía: al llegar a ellas, primero agregar sub-ítems concretos con su path (siguiendo el mismo formato que las prioridades anteriores) en un paso previo, y recién después tomarlos como lote.
+- Cada iteración deja el sitio publicado (`https://pcornejov.github.io/Enciclopedia-saint-seiya/`) actualizado con el lote de esa corrida, sin intervención manual. Si el merge o el deploy fallan, diagnosticar igual que un fix de infraestructura normal (ver logs del job con `mcp__github__get_job_logs`), corregir, y volver a intentar — no dejar el PR abierto sin resolver de una corrida a la otra.
