@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Mu, Aldebarán, Saga, Deathmask, Aioria, Shaka, Dohko, Milo)
+- Última iteración: 2026-07-01 (image-loop: Aioros, Shura, Camus, Afrodita, Shion, Poseidon, Hades, Pandora)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -26,14 +26,14 @@
 - [x] Shaka de Virgo (`personajes/shaka-virgo.mdx`) — 2026-07-01
 - [x] Dohko de Libra (`personajes/dohko-libra.mdx`) — 2026-07-01
 - [x] Milo de Escorpio (`personajes/milo-escorpio.mdx`) — 2026-07-01
-- [ ] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`)
-- [ ] Shura de Capricornio (`personajes/shura-capricornio.mdx`)
-- [ ] Camus de Acuario (`personajes/camus-acuario.mdx`)
-- [ ] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`)
-- [ ] Shion de Aries, Patriarca (`personajes/shion-patriarca.mdx`)
-- [ ] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`)
-- [ ] Hades / Alone (`personajes/hades-alone.mdx`)
-- [ ] Pandora (`personajes/pandora.mdx`)
+- [x] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`) — 2026-07-01
+- [x] Shura de Capricornio (`personajes/shura-capricornio.mdx`) — 2026-07-01
+- [x] Camus de Acuario (`personajes/camus-acuario.mdx`) — 2026-07-01
+- [x] Afrodita de Piscis (`personajes/afrodita-piscis.mdx`) — 2026-07-01
+- [x] Shion de Aries, Patriarca (`personajes/shion-patriarca.mdx`) — 2026-07-01
+- [x] Poseidon / Julian Solo (`personajes/poseidon-julian-solo.mdx`) — 2026-07-01
+- [x] Hades / Alone (`personajes/hades-alone.mdx`) — 2026-07-01
+- [x] Pandora (`personajes/pandora.mdx`) — 2026-07-01
 - [ ] Aiacos de Garuda (`personajes/aiacos-garuda.mdx`)
 - [ ] Minos de Grifo (`personajes/minos-grifo.mdx`)
 - [ ] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`)
