@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 10 — Saint Seiya Omega: Kouga, Mars; corrige faccion indebida en Alone de Lost Canvas)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — Soul of Gold: Balder; cierra la lista actual de Prioridad 10)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -140,5 +140,7 @@
 - [x] Kouga (`personajes/kouga-omega.mdx`) — 2026-07-01
 - [x] Mars (`personajes/mars-omega.mdx`) — 2026-07-01
 ### Soul of Gold
-- [ ] Personajes clave de Soul of Gold (agregar sub-ítems concretos con su path antes de tomarlos)
+- [x] Balder (`personajes/balder-soul-of-gold.mdx`) — 2026-07-01
+- (Los 12 Santos Dorados ya cubiertos en Prioridad 3 protagonizan también Soul of Gold, resucitados tras la Saga de
+  Hades)
 - (Lista abierta: seguir ampliando cada bloque de spin-off con ítems concretos con su path antes de tomarlos)
