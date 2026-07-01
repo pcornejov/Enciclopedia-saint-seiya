@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (semilla manual: 6 personajes centrales)
+- Última iteración: 2026-07-01 (image-loop: Mu, Aldebarán, Saga, Deathmask, Aioria, Shaka, Dohko, Milo)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -18,14 +18,14 @@
 - [x] Shun de Andrómeda (`personajes/shun-andromeda.mdx`) — 2026-07-01
 - [x] Ikki de Fénix (`personajes/ikki-fenix.mdx`) — 2026-07-01
 - [x] Saori Kido / Athena (`personajes/saori-kido-athena.mdx`) — 2026-07-01
-- [ ] Mu de Aries (`personajes/mu-aries.mdx`)
-- [ ] Aldebarán de Tauro (`personajes/aldebaran-tauro.mdx`)
-- [ ] Saga de Géminis (`personajes/saga-geminis.mdx`)
-- [ ] Deathmask de Cáncer (`personajes/deathmask-cancer.mdx`)
-- [ ] Aioria de Leo (`personajes/aioria-leo.mdx`)
-- [ ] Shaka de Virgo (`personajes/shaka-virgo.mdx`)
-- [ ] Dohko de Libra (`personajes/dohko-libra.mdx`)
-- [ ] Milo de Escorpio (`personajes/milo-escorpio.mdx`)
+- [x] Mu de Aries (`personajes/mu-aries.mdx`) — 2026-07-01
+- [x] Aldebarán de Tauro (`personajes/aldebaran-tauro.mdx`) — 2026-07-01
+- [x] Saga de Géminis (`personajes/saga-geminis.mdx`) — 2026-07-01
+- [x] Deathmask de Cáncer (`personajes/deathmask-cancer.mdx`) — 2026-07-01
+- [x] Aioria de Leo (`personajes/aioria-leo.mdx`) — 2026-07-01
+- [x] Shaka de Virgo (`personajes/shaka-virgo.mdx`) — 2026-07-01
+- [x] Dohko de Libra (`personajes/dohko-libra.mdx`) — 2026-07-01
+- [x] Milo de Escorpio (`personajes/milo-escorpio.mdx`) — 2026-07-01
 - [ ] Aioros de Sagitario (`personajes/aioros-sagitario.mdx`)
 - [ ] Shura de Capricornio (`personajes/shura-capricornio.mdx`)
 - [ ] Camus de Acuario (`personajes/camus-acuario.mdx`)
