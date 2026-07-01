@@ -3,6 +3,8 @@
 Enciclopedia en español sobre el manga y anime de Saint Seiya (Caballeros del Zodiaco): personajes, sagas, técnicas,
 armaduras, lugares y facciones de todo el universo, del canon clásico a los spin-offs.
 
+Sitio publicado: https://pcornejov.github.io/Enciclopedia-saint-seiya/
+
 Construida con [Astro](https://astro.build) + Content Collections. Gran parte del contenido se agrega de forma
 iterativa y automática mediante el skill `content-loop` (ver `.claude/skills/content-loop/SKILL.md`), que avanza el
 backlog definido en [`CONTENT_BACKLOG.md`](./CONTENT_BACKLOG.md).

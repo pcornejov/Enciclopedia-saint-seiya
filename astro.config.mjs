@@ -6,6 +6,6 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://pcornejov.github.io',
-  base: '/enciclopedia-saint-seiya',
+  base: '/Enciclopedia-saint-seiya',
   integrations: [mdx()]
 });
