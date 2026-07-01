@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 7 — Coliseo, Doce Casas, Cabo Sunión, Asgard, Templo Submarino)
+- Última iteración: 2026-07-01 (loop, Prioridad 7 — Inframundo, Elysion; cierra Prioridad 7)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -99,8 +99,8 @@
 - [x] Cabo Sunión (`lugares/cabo-sunion.mdx`) — 2026-07-01
 - [x] Asgard (`lugares/asgard.mdx`) — 2026-07-01
 - [x] Templo Submarino de Poseidon (`lugares/templo-submarino.mdx`) — 2026-07-01
-- [ ] Inframundo (`lugares/inframundo.mdx`)
-- [ ] Elysion (`lugares/elysion.mdx`)
+- [x] Inframundo (`lugares/inframundo.mdx`) — 2026-07-01
+- [x] Elysion (`lugares/elysion.mdx`) — 2026-07-01
 
 ## Prioridad 8 — Facciones
 - [x] Santos de Athena (`facciones/santos-de-athena.mdx`) — 2026-07-01
