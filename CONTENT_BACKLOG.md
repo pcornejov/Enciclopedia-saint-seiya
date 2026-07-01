@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 1 — Saga de Hades: Elysion)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 2 — personajes centrales)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -31,11 +31,11 @@
 
 ## Prioridad 2 — Personajes centrales (Bronce protagonistas + Athena)
 - [x] Seiya de Pegaso (`personajes/seiya-pegaso.mdx`) — 2026-07-01
-- [ ] Shiryu de Dragón (`personajes/shiryu-dragon.mdx`)
-- [ ] Hyoga de Cisne (`personajes/hyoga-cisne.mdx`)
-- [ ] Shun de Andrómeda (`personajes/shun-andromeda.mdx`)
-- [ ] Ikki de Fénix (`personajes/ikki-fenix.mdx`)
-- [ ] Saori Kido / Athena (`personajes/saori-kido-athena.mdx`)
+- [x] Shiryu de Dragón (`personajes/shiryu-dragon.mdx`) — 2026-07-01
+- [x] Hyoga de Cisne (`personajes/hyoga-cisne.mdx`) — 2026-07-01
+- [x] Shun de Andrómeda (`personajes/shun-andromeda.mdx`) — 2026-07-01
+- [x] Ikki de Fénix (`personajes/ikki-fenix.mdx`) — 2026-07-01
+- [x] Saori Kido / Athena (`personajes/saori-kido-athena.mdx`) — 2026-07-01
 
 ## Prioridad 3 — Los 12 Santos Dorados
 - [ ] Mu de Aries (`personajes/mu-aries.mdx`)
