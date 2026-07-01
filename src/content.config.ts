@@ -17,48 +17,48 @@ const origenEnum = z.enum([
 
 const personajes = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/personajes' }),
-  schema: ({ image }) =>
-    z.object({
-      nombre: z.string(),
-      nombreJapones: z.string().optional(),
-      alias: z.array(z.string()).default([]),
-      tipo: z.enum([
-        'santo_bronce',
-        'santo_plata',
-        'santo_oro',
-        'santo_acero',
-        'dios',
-        'diosa',
-        'guerrero_dios',
-        'marina_general',
-        'espectro',
-        'juez_infierno',
-        'humano',
-        'otro',
-      ]),
-      rangoArmadura: z.string().optional(),
-      faccion: reference('facciones').optional(),
-      armaduraPrincipal: reference('armaduras').optional(),
-      armadurasSecundarias: z.array(reference('armaduras')).default([]),
-      tecnicas: z.array(reference('tecnicas')).default([]),
-      sagas: z.array(reference('sagas')).default([]),
-      relaciones: z
-        .array(
-          z.object({
-            personaje: reference('personajes'),
-            tipo: z.enum(['maestro', 'discipulo', 'hermano', 'aliado', 'rival', 'enemigo', 'otro']),
-          }),
-        )
-        .default([]),
-      origen: origenEnum,
-      obraPrincipal: reference('obras').optional(),
-      estadoNarrativo: z
-        .enum(['vivo', 'muerto', 'resucitado', 'desconocido', 'variable_segun_obra'])
-        .default('desconocido'),
-      imagen: image().optional(),
-      resumen: z.string().min(1),
-      destacado: z.boolean().default(false),
-    }),
+  schema: z.object({
+    nombre: z.string(),
+    nombreJapones: z.string().optional(),
+    alias: z.array(z.string()).default([]),
+    tipo: z.enum([
+      'santo_bronce',
+      'santo_plata',
+      'santo_oro',
+      'santo_acero',
+      'dios',
+      'diosa',
+      'guerrero_dios',
+      'marina_general',
+      'espectro',
+      'juez_infierno',
+      'humano',
+      'otro',
+    ]),
+    rangoArmadura: z.string().optional(),
+    faccion: reference('facciones').optional(),
+    armaduraPrincipal: reference('armaduras').optional(),
+    armadurasSecundarias: z.array(reference('armaduras')).default([]),
+    tecnicas: z.array(reference('tecnicas')).default([]),
+    sagas: z.array(reference('sagas')).default([]),
+    relaciones: z
+      .array(
+        z.object({
+          personaje: reference('personajes'),
+          tipo: z.enum(['maestro', 'discipulo', 'hermano', 'aliado', 'rival', 'enemigo', 'otro']),
+        }),
+      )
+      .default([]),
+    origen: origenEnum,
+    obraPrincipal: reference('obras').optional(),
+    estadoNarrativo: z
+      .enum(['vivo', 'muerto', 'resucitado', 'desconocido', 'variable_segun_obra'])
+      .default('desconocido'),
+    imagen: z.string().url().optional(),
+    imagenAtribucion: z.string().optional(),
+    resumen: z.string().min(1),
+    destacado: z.boolean().default(false),
+  }),
 });
 
 const sagas = defineCollection({
@@ -95,6 +95,8 @@ const armaduras = defineCollection({
     constelacion: z.string().optional(),
     portadores: z.array(reference('personajes')).default([]),
     descripcion: z.string().min(1),
+    imagen: z.string().url().optional(),
+    imagenAtribucion: z.string().optional(),
   }),
 });
 

@@ -34,6 +34,13 @@ const relaciones = await Promise.all(
     )}
   </Fragment>
 
+  {data.imagen && (
+    <figure class="entry-image">
+      <img src={data.imagen} alt={`Retrato de ${data.nombre}`} loading="lazy" />
+      {data.imagenAtribucion && <figcaption>{data.imagenAtribucion}</figcaption>}
+    </figure>
+  )}
+
   <p>{data.resumen}</p>
   <Content />
 
