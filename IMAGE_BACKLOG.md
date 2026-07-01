@@ -43,6 +43,11 @@
 > van a terminar en `[skip]` salvo que se encuentre una imagen de la armadura específica (no del personaje que la
 > porta) en algún campo de descripción/imagen de la obra relacionada.
 - [ ] Armadura de Pegaso (`armaduras/armadura-pegaso.mdx`)
+- [ ] Armadura de Aries (`armaduras/armadura-aries.mdx`)
+- [ ] Armadura de Tauro (`armaduras/armadura-tauro.mdx`)
+- [ ] Armadura de Géminis (`armaduras/armadura-geminis.mdx`)
+- [ ] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`)
+- [ ] Armadura de Leo (`armaduras/armadura-leo.mdx`)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.

@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 5 — técnicas principales)
+- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Aries, Tauro, Géminis, Cáncer, Leo)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -74,11 +74,11 @@
 - [x] Scarlet Needle (`tecnicas/scarlet-needle.mdx`) — 2026-07-01
 
 ## Prioridad 6 — Armaduras (12 Doradas + Broncíneas protagonistas)
-- [ ] Armadura de Aries (`armaduras/armadura-aries.mdx`)
-- [ ] Armadura de Tauro (`armaduras/armadura-tauro.mdx`)
-- [ ] Armadura de Géminis (`armaduras/armadura-geminis.mdx`)
-- [ ] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`)
-- [ ] Armadura de Leo (`armaduras/armadura-leo.mdx`)
+- [x] Armadura de Aries (`armaduras/armadura-aries.mdx`) — 2026-07-01
+- [x] Armadura de Tauro (`armaduras/armadura-tauro.mdx`) — 2026-07-01
+- [x] Armadura de Géminis (`armaduras/armadura-geminis.mdx`) — 2026-07-01
+- [x] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`) — 2026-07-01
+- [x] Armadura de Leo (`armaduras/armadura-leo.mdx`) — 2026-07-01
 - [ ] Armadura de Virgo (`armaduras/armadura-virgo.mdx`)
 - [ ] Armadura de Libra (`armaduras/armadura-libra.mdx`)
 - [ ] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`)
