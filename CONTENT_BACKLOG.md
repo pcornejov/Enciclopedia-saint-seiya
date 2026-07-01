@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Aries, Tauro, Géminis, Cáncer, Leo)
+- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Virgo, Libra, Escorpio, Sagitario, Capricornio)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -79,11 +79,11 @@
 - [x] Armadura de Géminis (`armaduras/armadura-geminis.mdx`) — 2026-07-01
 - [x] Armadura de Cáncer (`armaduras/armadura-cancer.mdx`) — 2026-07-01
 - [x] Armadura de Leo (`armaduras/armadura-leo.mdx`) — 2026-07-01
-- [ ] Armadura de Virgo (`armaduras/armadura-virgo.mdx`)
-- [ ] Armadura de Libra (`armaduras/armadura-libra.mdx`)
-- [ ] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`)
-- [ ] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`)
-- [ ] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`)
+- [x] Armadura de Virgo (`armaduras/armadura-virgo.mdx`) — 2026-07-01
+- [x] Armadura de Libra (`armaduras/armadura-libra.mdx`) — 2026-07-01
+- [x] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`) — 2026-07-01
+- [x] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`) — 2026-07-01
+- [x] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`) — 2026-07-01
 - [ ] Armadura de Acuario (`armaduras/armadura-acuario.mdx`)
 - [ ] Armadura de Piscis (`armaduras/armadura-piscis.mdx`)
 - [x] Armadura de Pegaso (`armaduras/armadura-pegaso.mdx`) — 2026-07-01
