@@ -52,11 +52,26 @@ equivalente.
     git push --force-with-lease origin content/auto-loop
     ```
     Como el merge es `squash`, `content/auto-loop` queda con historial "viejo" respecto a `main` aunque el contenido sea el mismo; sin este paso, la siguiente iteración choca con un conflicto de merge trivial pero evitable. Este force-push está limitado exclusivamente a `content/auto-loop` (rama de trabajo exclusiva del loop, sin otros colaboradores) — **nunca** hacer force-push a `main`.
-11. **Encadenar la siguiente iteración de inmediato**: si `CONTENT_BACKLOG.md` todavía tiene ítems pendientes, no esperar al próximo disparo de `/loop` — invocar de nuevo el skill `content-loop` (Skill tool) ahora mismo y seguir así, iteración tras iteración, hasta agotar el backlog o encontrarse con un bloqueo real (build roto que no se puede arreglar, merge conflict que no se puede resolver, etc.). El cron de `/loop` sigue programado cada 30 min como red de seguridad, solo por si la cadena se corta (fin de sesión, error no recuperable) — no como cadencia normal.
-12. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío. Tampoco encadenar una iteración más en ese caso.
+11. **Encadenar la siguiente iteración de inmediato, ALTERNANDO con `image-loop`** (a pedido del usuario): al
+    terminar esta iteración, no volver a invocar `content-loop` — invocar el skill **`image-loop`** (Skill tool)
+    ahora mismo, sin esperar el próximo disparo de `/loop`. `image-loop` hace lo mismo del lado de imágenes y, al
+    terminar su iteración, vuelve a invocar `content-loop`, y así sucesivamente. Reglas de la alternancia:
+    - Si `CONTENT_BACKLOG.md` queda sin ítems pendientes pero `IMAGE_BACKLOG.md` todavía tiene, igual invocar
+      `image-loop` (para que termine su trabajo) en vez de detener toda la cadena.
+    - Si **ambos** backlogs (`CONTENT_BACKLOG.md` e `IMAGE_BACKLOG.md`) están sin ítems pendientes, ahí sí parar
+      del todo (no invocar a ningún skill).
+    - El cron de `/loop` sigue programado cada 30 min como red de seguridad, solo por si la cadena se corta (fin
+      de sesión, error no recuperable) — no como cadencia normal.
+12. **Condición de parada de este skill**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, no generar un
+    commit ni PR vacío en esta corrida — pero igual seguir la regla de alternancia del paso 11 antes de terminar
+    el turno.
 
 ## Notas
 
-- El campo `imagen` de `personajes` queda sin llenar — no descargar ni inventar imágenes.
+- El campo `imagen` de `personajes`/`armaduras` **no lo toca este skill** — es responsabilidad exclusiva de
+  `image-loop` (ver `.claude/skills/image-loop/SKILL.md`). `content-loop` nunca debe descargar, inventar ni
+  completar imágenes por su cuenta.
 - Las listas abiertas del backlog (Prioridad 9 y 10) no tienen paths concretos todavía: al llegar a ellas, primero agregar sub-ítems concretos con su path (siguiendo el mismo formato que las prioridades anteriores) en un paso previo, y recién después tomarlos como lote.
+- Cuando este skill agregue personajes/armaduras nuevos, agregar los ítems correspondientes a `IMAGE_BACKLOG.md`
+  (con su path exacto) en el mismo commit, para que `image-loop` los encuentre en su próxima corrida.
 - Cada iteración deja el sitio publicado (`https://pcornejov.github.io/Enciclopedia-saint-seiya/`) actualizado con el lote de esa corrida, sin intervención manual. Si el merge o el deploy fallan, diagnosticar igual que un fix de infraestructura normal (ver logs del job con `mcp__github__get_job_logs`), corregir, y volver a intentar — no dejar el PR abierto sin resolver de una corrida a la otra.
