@@ -44,8 +44,15 @@ equivalente.
    - Si no existe, crearlo con `mcp__github__create_pull_request` (`head: content/auto-loop`, `base: main`), con un título/resumen breve del lote de esta iteración.
    - Antes de mergear, chequear el estado del último commit (`mcp__github__pull_request_read` método `get_status` o `get_check_runs`) por si hay checks de CI configurados; si algún check obligatorio está en curso o falló, no forzar el merge — reportarlo y dejarlo para la próxima iteración.
    - Mergear con `mcp__github__merge_pull_request` (`merge_method: squash`). Esto pushea a `main` y dispara automáticamente `.github/workflows/deploy.yml`, publicando el cambio en GitHub Pages en 1-2 minutos.
-   - No hace falta resetear ni recrear `content/auto-loop` después del merge: la próxima iteración sigue commiteando sobre la misma rama; el próximo PR va a mostrar solo el diff nuevo aunque el historial no haga fast-forward.
-10. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío.
+10. **Resincronizar `content/auto-loop` con `main` inmediatamente después del merge** (ya autorizado por el usuario, no volver a preguntar):
+    ```
+    git fetch origin main
+    git checkout content/auto-loop
+    git reset --hard origin/main
+    git push --force-with-lease origin content/auto-loop
+    ```
+    Como el merge es `squash`, `content/auto-loop` queda con historial "viejo" respecto a `main` aunque el contenido sea el mismo; sin este paso, la siguiente iteración choca con un conflicto de merge trivial pero evitable. Este force-push está limitado exclusivamente a `content/auto-loop` (rama de trabajo exclusiva del loop, sin otros colaboradores) — **nunca** hacer force-push a `main`.
+11. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío.
 
 ## Notas
 
