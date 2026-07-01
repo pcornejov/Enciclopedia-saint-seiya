@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 10 — The Lost Canvas: Tenma, Alone, Sasha, Regulus de Leo)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — Episode G: Kanon de Géminis)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -128,7 +128,8 @@
 - [x] Sasha (`personajes/sasha-lost-canvas.mdx`) — 2026-07-01
 - [x] Regulus de Leo (`personajes/regulus-leo.mdx`) — 2026-07-01
 ### Episode G
-- [ ] Personajes clave de Episode G (agregar sub-ítems concretos con su path antes de tomarlos)
+- [x] Kanon de Géminis (`personajes/kanon-geminis.mdx`) — 2026-07-01
+- (Aioria y Saga ya cubiertos en Prioridad 3, protagonizan también Episode G en una etapa temprana de su historia)
 ### Next Dimension
 - [ ] Personajes clave de Next Dimension (agregar sub-ítems concretos con su path antes de tomarlos)
 ### Saintia Sho
