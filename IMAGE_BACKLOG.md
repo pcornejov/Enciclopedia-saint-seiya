@@ -47,6 +47,10 @@
 - [skip] Albiore de Cefeo (`personajes/albiore-cefeo.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Albiore", "Cepheus Albiore", "Albiore Cepheus")
 - [x] Misty de Lagarto (`personajes/misty-lagarto.mdx`) — 2026-07-01
 - [skip] Babel de Centauro (`personajes/babel-centauro.mdx`) — 2026-07-01 (sin match verificado en AniList tras probar "Babel", "Centaur Babel", "Babel Centauro")
+- [ ] Tenma (`personajes/tenma-lost-canvas.mdx`)
+- [ ] Alone (`personajes/alone-lost-canvas.mdx`)
+- [ ] Sasha (`personajes/sasha-lost-canvas.mdx`)
+- [ ] Regulus de Leo (`personajes/regulus-leo.mdx`)
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
