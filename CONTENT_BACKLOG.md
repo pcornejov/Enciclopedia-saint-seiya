@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 10 — Next Dimension: Abel)
+- Última iteración: 2026-07-01 (loop, Prioridad 10 — Saintia Sho: Sho)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -135,7 +135,7 @@
 - (Shion, Dohko, Pandora, Marín, Shaina y Alone ya cubiertos en prioridades previas; Next Dimension los retrata en
   una era anterior de la misma reencarnación)
 ### Saintia Sho
-- [ ] Personajes clave de Saintia Sho (agregar sub-ítems concretos con su path antes de tomarlos)
+- [x] Sho (`personajes/sho-saintia.mdx`) — 2026-07-01
 ### Saint Seiya Omega
 - [ ] Personajes clave de Saint Seiya Omega (agregar sub-ítems concretos con su path antes de tomarlos)
 ### Soul of Gold

@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: Abel con imagen verificada — cierra el backlog actual)
+- Última iteración: 2026-07-01 (image-loop: Abel con imagen verificada)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -53,6 +53,7 @@
 - [x] Regulus de Leo (`personajes/regulus-leo.mdx`) — 2026-07-01
 - [x] Kanon de Géminis (`personajes/kanon-geminis.mdx`) — 2026-07-01
 - [x] Abel (`personajes/abel-next-dimension.mdx`) — 2026-07-01
+- [ ] Sho (`personajes/sho-saintia.mdx`)
 
 ## Armaduras
 > Cobertura esperada baja: AniList indexa personajes, no piezas de equipo por separado. La mayoría de estos ítems
