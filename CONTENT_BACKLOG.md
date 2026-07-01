@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 2 — personajes centrales)
+- Última iteración: 2026-07-01 (loop, Prioridad 3 — Mu, Aldebarán, Saga, Deathmask, Aioria)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -38,11 +38,11 @@
 - [x] Saori Kido / Athena (`personajes/saori-kido-athena.mdx`) — 2026-07-01
 
 ## Prioridad 3 — Los 12 Santos Dorados
-- [ ] Mu de Aries (`personajes/mu-aries.mdx`)
-- [ ] Aldebarán de Tauro (`personajes/aldebaran-tauro.mdx`)
-- [ ] Saga de Géminis (`personajes/saga-geminis.mdx`)
-- [ ] Deathmask de Cáncer (`personajes/deathmask-cancer.mdx`)
-- [ ] Aioria de Leo (`personajes/aioria-leo.mdx`)
+- [x] Mu de Aries (`personajes/mu-aries.mdx`) — 2026-07-01
+- [x] Aldebarán de Tauro (`personajes/aldebaran-tauro.mdx`) — 2026-07-01
+- [x] Saga de Géminis (`personajes/saga-geminis.mdx`) — 2026-07-01
+- [x] Deathmask de Cáncer (`personajes/deathmask-cancer.mdx`) — 2026-07-01
+- [x] Aioria de Leo (`personajes/aioria-leo.mdx`) — 2026-07-01
 - [ ] Shaka de Virgo (`personajes/shaka-virgo.mdx`)
 - [ ] Dohko de Libra (`personajes/dohko-libra.mdx`)
 - [ ] Milo de Escorpio (`personajes/milo-escorpio.mdx`)
