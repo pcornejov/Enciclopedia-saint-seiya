@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 4 — Jueces del Infierno)
+- Última iteración: 2026-07-01 (loop, Prioridad 5 — Pegasus Ryu Sei Ken, Rozan Sho Ryu Ha, Diamond Dust, Aurora Execution, Nebula Chain)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
