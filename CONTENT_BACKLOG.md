@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, cierre de Prioridad 6 — Armadura de Fénix)
+- Última iteración: 2026-07-01 (loop, Prioridad 7 — Coliseo, Doce Casas, Cabo Sunión, Asgard, Templo Submarino)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -94,11 +94,11 @@
 
 ## Prioridad 7 — Lugares clave
 - [x] Santuario de Athena (`lugares/santuario.mdx`) — 2026-07-01
-- [ ] Coliseo del Santuario (`lugares/coliseo.mdx`)
-- [ ] Las 12 Casas (`lugares/doce-casas.mdx`)
-- [ ] Cabo Sunión (`lugares/cabo-sunion.mdx`)
-- [ ] Asgard (`lugares/asgard.mdx`)
-- [ ] Templo Submarino de Poseidon (`lugares/templo-submarino.mdx`)
+- [x] Coliseo del Santuario (`lugares/coliseo.mdx`) — 2026-07-01
+- [x] Las 12 Casas (`lugares/doce-casas.mdx`) — 2026-07-01
+- [x] Cabo Sunión (`lugares/cabo-sunion.mdx`) — 2026-07-01
+- [x] Asgard (`lugares/asgard.mdx`) — 2026-07-01
+- [x] Templo Submarino de Poseidon (`lugares/templo-submarino.mdx`) — 2026-07-01
 - [ ] Inframundo (`lugares/inframundo.mdx`)
 - [ ] Elysion (`lugares/elysion.mdx`)
 
