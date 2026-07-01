@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 7 — Inframundo, Elysion; cierra Prioridad 7)
+- Última iteración: 2026-07-01 (loop, Prioridad 8 — Ejército de Poseidon, Guerreros Dioses de Asgard, Ejército de Hades; cierra Prioridad 8)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -104,9 +104,9 @@
 
 ## Prioridad 8 — Facciones
 - [x] Santos de Athena (`facciones/santos-de-athena.mdx`) — 2026-07-01
-- [ ] Ejército de Poseidon / Generales Marinos (`facciones/ejercito-poseidon.mdx`)
-- [ ] Guerreros Dioses de Asgard (`facciones/guerreros-dioses-asgard.mdx`)
-- [ ] Ejército de Hades / Espectros (`facciones/ejercito-hades.mdx`)
+- [x] Ejército de Poseidon / Generales Marinos (`facciones/ejercito-poseidon.mdx`) — 2026-07-01
+- [x] Guerreros Dioses de Asgard (`facciones/guerreros-dioses-asgard.mdx`) — 2026-07-01
+- [x] Ejército de Hades / Espectros (`facciones/ejercito-hades.mdx`) — 2026-07-01
 
 ## Prioridad 9 — Personajes secundarios (Plata / Bronce restantes)
 - [ ] Ichi, Nachi, Jabu, Geki y otros Santos de Bronce de la Escuela Athena (evaluar de a uno, un `.mdx` por personaje)
