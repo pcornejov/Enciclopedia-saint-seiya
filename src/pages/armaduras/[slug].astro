@@ -20,6 +20,13 @@ const portadores = await Promise.all(data.portadores.map((ref) => getEntry(ref))
     {data.constelacion && <span class="chip">Constelación: {data.constelacion}</span>}
   </Fragment>
 
+  {data.imagen && (
+    <figure class="entry-image">
+      <img src={data.imagen} alt={`Imagen de la armadura de ${data.nombre}`} loading="lazy" />
+      {data.imagenAtribucion && <figcaption>{data.imagenAtribucion}</figcaption>}
+    </figure>
+  )}
+
   <p>{data.descripcion}</p>
   <Content />
 
