@@ -52,7 +52,8 @@ equivalente.
     git push --force-with-lease origin content/auto-loop
     ```
     Como el merge es `squash`, `content/auto-loop` queda con historial "viejo" respecto a `main` aunque el contenido sea el mismo; sin este paso, la siguiente iteración choca con un conflicto de merge trivial pero evitable. Este force-push está limitado exclusivamente a `content/auto-loop` (rama de trabajo exclusiva del loop, sin otros colaboradores) — **nunca** hacer force-push a `main`.
-11. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío.
+11. **Encadenar la siguiente iteración de inmediato**: si `CONTENT_BACKLOG.md` todavía tiene ítems pendientes, no esperar al próximo disparo de `/loop` — invocar de nuevo el skill `content-loop` (Skill tool) ahora mismo y seguir así, iteración tras iteración, hasta agotar el backlog o encontrarse con un bloqueo real (build roto que no se puede arreglar, merge conflict que no se puede resolver, etc.). El cron de `/loop` sigue programado cada 30 min como red de seguridad, solo por si la cadena se corta (fin de sesión, error no recuperable) — no como cadencia normal.
+12. **Condición de parada**: si `CONTENT_BACKLOG.md` no tiene ningún ítem pendiente, reportarlo y no generar un commit ni PR vacío. Tampoco encadenar una iteración más en ese caso.
 
 ## Notas
 
