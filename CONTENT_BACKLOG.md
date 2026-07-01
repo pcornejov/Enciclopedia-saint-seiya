@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 5 — Pegasus Ryu Sei Ken, Rozan Sho Ryu Ha, Diamond Dust, Aurora Execution, Nebula Chain)
+- Última iteración: 2026-07-01 (loop, cierre de Prioridad 5 — técnicas principales)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -62,16 +62,16 @@
 - [x] Radamanthys de Wyvern (`personajes/radamanthys-wyvern.mdx`) — 2026-07-01
 
 ## Prioridad 5 — Técnicas principales
-- [ ] Pegasus Ryu Sei Ken (`tecnicas/pegasus-ryu-sei-ken.mdx`)
-- [ ] Rozan Sho Ryu Ha (`tecnicas/rozan-sho-ryu-ha.mdx`)
-- [ ] Diamond Dust (`tecnicas/diamond-dust.mdx`)
-- [ ] Aurora Execution (`tecnicas/aurora-execution.mdx`)
-- [ ] Nebula Chain (`tecnicas/nebula-chain.mdx`)
-- [ ] Hoyoku Tensho (`tecnicas/hoyoku-tensho.mdx`)
-- [ ] Phoenix Genma Ken (`tecnicas/phoenix-genma-ken.mdx`)
-- [ ] Galaxian Explosion (`tecnicas/galaxian-explosion.mdx`)
-- [ ] Starlight Extinction (`tecnicas/starlight-extinction.mdx`)
-- [ ] Scarlet Needle (`tecnicas/scarlet-needle.mdx`)
+- [x] Pegasus Ryu Sei Ken (`tecnicas/pegasus-ryu-sei-ken.mdx`) — 2026-07-01
+- [x] Rozan Sho Ryu Ha (`tecnicas/rozan-sho-ryu-ha.mdx`) — 2026-07-01
+- [x] Diamond Dust (`tecnicas/diamond-dust.mdx`) — 2026-07-01
+- [x] Aurora Execution (`tecnicas/aurora-execution.mdx`) — 2026-07-01
+- [x] Nebula Chain (`tecnicas/nebula-chain.mdx`) — 2026-07-01
+- [x] Hoyoku Tensho (`tecnicas/hoyoku-tensho.mdx`) — 2026-07-01
+- [x] Phoenix Genma Ken (`tecnicas/phoenix-genma-ken.mdx`) — 2026-07-01
+- [x] Galaxian Explosion (`tecnicas/galaxian-explosion.mdx`) — 2026-07-01
+- [x] Starlight Extinction (`tecnicas/starlight-extinction.mdx`) — 2026-07-01
+- [x] Scarlet Needle (`tecnicas/scarlet-needle.mdx`) — 2026-07-01
 
 ## Prioridad 6 — Armaduras (12 Doradas + Broncíneas protagonistas)
 - [ ] Armadura de Aries (`armaduras/armadura-aries.mdx`)
