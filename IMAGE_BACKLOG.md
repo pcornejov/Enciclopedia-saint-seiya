@@ -8,7 +8,7 @@
 > no bloquea la iteración ni se reintenta indefinidamente.
 
 ## Estado global
-- Última iteración: 2026-07-01 (image-loop: 16 armaduras marcadas [skip] — AniList no cubre piezas de equipo)
+- Última iteración: 2026-07-01 (image-loop: Armadura de Fénix marcada [skip] — cierra el backlog actual)
 - Rama de trabajo: `content/auto-loop` (comparte rama y flujo de PR con `content-loop`)
 
 ## Personajes
@@ -58,7 +58,7 @@
 - [skip] Armadura de Dragón (`armaduras/armadura-dragon.mdx`) — 2026-07-01 (ídem)
 - [skip] Armadura de Cisne (`armaduras/armadura-cisne.mdx`) — 2026-07-01 (ídem)
 - [skip] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`) — 2026-07-01 (ídem)
-- [ ] Armadura de Fénix (`armaduras/armadura-fenix.mdx`)
+- [skip] Armadura de Fénix (`armaduras/armadura-fenix.mdx`) — 2026-07-01 (sin match en AniList: no indexa piezas de equipo)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.
