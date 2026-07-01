@@ -53,6 +53,11 @@
 - [ ] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`)
 - [ ] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`)
 - [ ] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`)
+- [ ] Armadura de Acuario (`armaduras/armadura-acuario.mdx`)
+- [ ] Armadura de Piscis (`armaduras/armadura-piscis.mdx`)
+- [ ] Armadura de Dragón (`armaduras/armadura-dragon.mdx`)
+- [ ] Armadura de Cisne (`armaduras/armadura-cisne.mdx`)
+- [ ] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`)
 
 > Nota: a medida que el loop de contenido (`content-loop`) agregue nuevos personajes/armaduras, agregar acá los
 > ítems correspondientes con su path exacto antes de tomarlos, siguiendo el mismo formato.

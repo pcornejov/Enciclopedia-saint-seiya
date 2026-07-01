@@ -6,7 +6,7 @@
 > Tomar los ítems en orden, de arriba hacia abajo, respetando las prioridades.
 
 ## Estado global
-- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Virgo, Libra, Escorpio, Sagitario, Capricornio)
+- Última iteración: 2026-07-01 (loop, Prioridad 6 — Armaduras de Acuario, Piscis, Dragón, Cisne, Andrómeda)
 - Rama de trabajo del loop: `content/auto-loop`
 
 ## Prioridad 0 — Obras (prerrequisito de las sagas)
@@ -84,12 +84,12 @@
 - [x] Armadura de Escorpio (`armaduras/armadura-escorpio.mdx`) — 2026-07-01
 - [x] Armadura de Sagitario (`armaduras/armadura-sagitario.mdx`) — 2026-07-01
 - [x] Armadura de Capricornio (`armaduras/armadura-capricornio.mdx`) — 2026-07-01
-- [ ] Armadura de Acuario (`armaduras/armadura-acuario.mdx`)
-- [ ] Armadura de Piscis (`armaduras/armadura-piscis.mdx`)
+- [x] Armadura de Acuario (`armaduras/armadura-acuario.mdx`) — 2026-07-01
+- [x] Armadura de Piscis (`armaduras/armadura-piscis.mdx`) — 2026-07-01
 - [x] Armadura de Pegaso (`armaduras/armadura-pegaso.mdx`) — 2026-07-01
-- [ ] Armadura de Dragón (`armaduras/armadura-dragon.mdx`)
-- [ ] Armadura de Cisne (`armaduras/armadura-cisne.mdx`)
-- [ ] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`)
+- [x] Armadura de Dragón (`armaduras/armadura-dragon.mdx`) — 2026-07-01
+- [x] Armadura de Cisne (`armaduras/armadura-cisne.mdx`) — 2026-07-01
+- [x] Armadura de Andrómeda (`armaduras/armadura-andromeda.mdx`) — 2026-07-01
 - [ ] Armadura de Fénix (`armaduras/armadura-fenix.mdx`)
 
 ## Prioridad 7 — Lugares clave
